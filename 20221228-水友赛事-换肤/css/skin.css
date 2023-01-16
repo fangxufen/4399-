@@ -1,0 +1,688 @@
+/*
+body 增加class：
+默认暗色：不增加任何类名，
+蓝色皮肤：skin_blue
+*/
+/* skin_blue ------- */
+.skin_blue {
+  background: #eff0f2;
+/* 底部模板 */
+}
+.skin_blue .mouRes,
+.skin_blue .mouSpc {
+  background: #fff;
+  border-radius: 0.1rem;
+}
+.skin_blue .mouRes:before,
+.skin_blue .mouSpc:before,
+.skin_blue .mouRes:after,
+.skin_blue .mouSpc:after {
+  display: none;
+}
+.skin_blue .mouTit {
+  width: 7.5rem;
+  height: 0.66rem;
+  padding-top: 0.55rem;
+  overflow: hidden;
+}
+.skin_blue .mouTit i {
+  width: 7.5rem;
+  height: 0.42rem;
+}
+.skin_blue .mouTit .tit1 {
+  background-image: url("../images/blue/titBg1.png");
+}
+.skin_blue .mouTit .tit2 {
+  background-image: url("../images/blue/titBg2.png");
+}
+.skin_blue .mouTit .tit3 {
+  background-image: url("../images/blue/titBg3.png");
+}
+.skin_blue .mouTit .tit4 {
+  background-image: url("../images/blue/titBg4.png");
+}
+.skin_blue .mouTit .tit5 {
+  background-image: url("../images/blue/titBg5.png");
+}
+.skin_blue .mouNav {
+  background: #fff;
+}
+.skin_blue .mouNav ul a:before {
+  background: #1c74f1;
+}
+.skin_blue .mouNav ul li.on a {
+  color: #1c74f1;
+}
+.skin_blue .mouFixed {
+  width: 0.99rem;
+  margin-left: 2.75rem;
+}
+.skin_blue .mouFixed a,
+.skin_blue .mouFixed a i {
+  width: 0.99rem;
+  height: 0.99rem;
+}
+.skin_blue .mouFixed .nums {
+  background: #38ceff;
+  border-radius: 0.08rem;
+  top: -0.2rem;
+}
+.skin_blue .mouFixed .a1 i {
+  background-image: url("../images/blue/fixIcon_lt.png");
+}
+.skin_blue .mouFixed .a2 i {
+  background-image: url("../images/blue/fixIcon_fx.png");
+}
+.skin_blue .mouFixed .a3 i {
+  background-image: url("../images/blue/fixIcon_top.png");
+}
+.skin_blue .mouMatchNav {
+  background-image: url("../images/blue/tabBg.png");
+}
+.skin_blue .mouMatchNav .tabMatchList {
+  margin-top: 0.08rem;
+}
+.skin_blue .mouMatchNav .tabMatchList span {
+  width: 1.59rem;
+  height: 0.76rem;
+  line-height: 0.76rem;
+  color: #666;
+}
+.skin_blue .mouMatchNav .tabMatchList span.on {
+  background-image: url("../images/blue/tabBgSpan.png");
+  background-size: 0.51rem 0.14rem;
+  background-position: center bottom;
+  color: #1c74f1;
+}
+.skin_blue .mouCenter .mouTeamBtn a {
+  border-radius: 0.1rem;
+}
+.skin_blue .mouCenter .mouTeamBtn a:before,
+.skin_blue .mouCenter .mouTeamBtn a:after {
+  display: none;
+}
+.skin_blue .mouCenter .mouTeamBtn .a1 {
+  background: #ffa653;
+}
+.skin_blue .mouCenter .mouTeamBtn .a2 {
+  background: #38ceff;
+}
+.skin_blue .teamList .btn {
+  color: #38ceff;
+  box-shadow: 0 0 0 0.01rem #38ceff inset;
+}
+.skin_blue .teamList .info p span i {
+  background-image: url("../images/blue/iconUser.png");
+}
+.skin_blue .mouFcast {
+  background: #171e35;
+  border-radius: 0.1rem;
+}
+.skin_blue .mouFcast dt {
+  background-image: url("../images/blue/dtaTitBg.png");
+}
+.skin_blue .mouFcast dt .rules {
+  color: #fff;
+}
+.skin_blue .mouFcast dd {
+  background: #fff;
+  border-radius: 0.1rem;
+}
+.skin_blue .swpFcast .fcastTime i {
+  background-image: url("../images/blue/fcastTime.png");
+}
+.skin_blue .swpFcast .fcastGuess .fgTit li,
+.skin_blue .swpFcast .fcastGuess .fgMult li {
+  background: #eff0f2;
+  border-radius: 0.06rem;
+}
+.skin_blue .swpFcast .fcastGuess .fgTit li:last-child span,
+.skin_blue .swpFcast .fcastGuess .fgMult li:last-child span {
+  opacity: 0.7;
+}
+.skin_blue .swpFcast .fcastGuess .fgTit li:last-child .jian,
+.skin_blue .swpFcast .fcastGuess .fgMult li:last-child .jian {
+  background-image: url("../images/blue/iconJian.png");
+}
+.skin_blue .swpFcast .fcastGuess .fgTit li:last-child .add,
+.skin_blue .swpFcast .fcastGuess .fgMult li:last-child .add {
+  background-image: url("../images/blue/iconAdd.png");
+}
+.skin_blue .swpFcast .fcastGuess .fgTit li.on,
+.skin_blue .swpFcast .fcastGuess .fgMult li.on {
+  box-shadow: 0 0 0 0.01rem #1c74f1 inset;
+}
+.skin_blue .swpFcast .fcLottery p i,
+.skin_blue .swpFcast .fcAbout p i {
+  background-image: url("../images/blue/iconBmh.png");
+}
+.skin_blue .swpFcast .fcLottery p .ywicon,
+.skin_blue .swpFcast .fcAbout p .ywicon {
+  background-image: url("../images/blue/iconWen.png");
+}
+.skin_blue .swpFcast .fcLottery p em,
+.skin_blue .swpFcast .fcAbout p em {
+  color: #ff6b6b;
+}
+.skin_blue .swpFcast .fcastBtn {
+  background: #38ceff;
+  border-radius: 0.1rem;
+  color: #fff;
+}
+.skin_blue .fcastTeam .fcRate i {
+  background-image: url("../images/blue/vsIcon.png");
+}
+.skin_blue .fcastTeam .fcList .tmNums span i {
+  background: #1c74f1;
+  height: 0.1rem;
+}
+.skin_blue .fcastTeam .fcList li.on {
+  box-shadow: 0 0 0 0.01rem #1c74f1 inset;
+  color: #1c74f1;
+}
+.skin_blue .mouDetail {
+  background-color: #121a2f;
+  border-radius: 0.1rem;
+}
+.skin_blue .mouDetail dt {
+  background-image: url("../images/blue/dtaTitBg.png");
+}
+.skin_blue .mouDetail dd {
+  background: #fff;
+  padding-bottom: 0.4rem;
+}
+.skin_blue .mouDetail dd:before {
+  display: none;
+}
+.skin_blue .dtaLive {
+  border-radius: 0.1rem;
+}
+.skin_blue .dtaLive .video {
+  background-image: url("../images/blue/iconRevVdoBig.png");
+  width: 0.64rem;
+  height: 0.64rem;
+  left: 50%;
+  margin-left: -0.32rem;
+  top: 50%;
+  margin-top: -0.32rem;
+}
+.skin_blue .dtaVideo .video-js .vjs-big-play-button {
+  background: url("../images/blue/iconRevVdoBig.png") no-repeat;
+  background-size: 0.64rem 0.64rem;
+  width: 0.64rem;
+  height: 0.64rem;
+  left: 50%;
+  margin-left: -0.32rem;
+  top: 50%;
+  margin-top: -0.32rem;
+}
+.skin_blue .dtaEnd .djs span {
+  color: #ff6b6b;
+}
+.skin_blue .dtaSign .signBtn {
+  background: #38ceff;
+  width: 3.98rem;
+  height: 0.73rem;
+  line-height: 0.73rem;
+  color: #fff;
+  border-radius: 0.1rem;
+}
+.skin_blue .dtaSign .signBtn i {
+  background-image: url("../images/blue/dtaBtnIcon.png");
+  margin-left: 0rem;
+}
+.skin_blue .dtaSign .nums em {
+  color: #ff6b6b;
+}
+.skin_blue .dtaSign .nums i {
+  background-image: url("../images/blue/iconUser.png");
+}
+.skin_blue .dtaJoin a {
+  background: #ecfaff;
+  color: #1c74f1;
+}
+.skin_blue .dtaJoin a i {
+  background-image: url("../images/blue/qqIcon.png");
+}
+.skin_blue .dateList li span {
+  background: #fff;
+}
+.skin_blue .dateList li i {
+  background-image: url("../images/blue/tmLineDan.png");
+  background-size: 0.08rem 0.08rem;
+  height: 0.08rem;
+  margin: 0.05rem auto 0.11rem;
+}
+.skin_blue .dateList li.end {
+  color: #999;
+}
+.skin_blue .dateList li.end span {
+  color: #333;
+}
+.skin_blue .dateList li.on,
+.skin_blue .dateList .li.nowDate {
+  color: #1c74f1;
+}
+.skin_blue .dateList li.on i,
+.skin_blue .dateList .li.nowDate i {
+  background-image: url("../images/blue/tmLineGun.png");
+  background-size: 0.39rem 0.39rem;
+  height: 0.44rem;
+}
+.skin_blue .mouMatList {
+  background: #eff0f2;
+  border-radius: 0.08rem;
+}
+.skin_blue .mouMatList li {
+  color: #333;
+  border-radius: 0.06rem;
+}
+.skin_blue .mouMatList li.on {
+  background: #fff;
+}
+.skin_blue .mouMatList li.on:before,
+.skin_blue .mouMatList li.on:after {
+  display: none;
+}
+.skin_blue .nounTable th,
+.skin_blue .nounTable td {
+  background: #f1f3f4;
+}
+.skin_blue .nounTable td {
+  border-top: 0.02rem solid #fff;
+}
+.skin_blue .nounTable tr:nth-child(2) .num:before {
+  background-image: url("../images/blue/tableNoun1.png");
+}
+.skin_blue .nounTable tr:nth-child(3) .num:before {
+  background-image: url("../images/blue/tableNoun2.png");
+}
+.skin_blue .nounTable tr:nth-child(4) .num:before {
+  background-image: url("../images/blue/tableNoun3.png");
+}
+.skin_blue .rowMouBox .tit {
+  background: #f1f3f4;
+  color: #666;
+}
+.skin_blue .rowMouBox .rowList li {
+  background: #f1f3f4;
+}
+.skin_blue .rowMouBox .rowList .st1 {
+  background-image: url("../images/blue/rowNoun1.png");
+}
+.skin_blue .rowMouBox .rowList .st2 {
+  background-image: url("../images/blue/rowNoun2.png");
+}
+.skin_blue .rowMouBox .rowList .st3 {
+  background-image: url("../images/blue/rowNoun3.png");
+}
+.skin_blue .matMouVs {
+  background-image: url("../images/blue/matVsBg.png");
+  border-radius: 0.09rem;
+}
+.skin_blue .matMouVs .moreMat {
+  color: #70aafd;
+  box-shadow: 0 0 0 0.01rem #70aafd inset;
+}
+.skin_blue .matMouVs .moreMat i {
+  background-image: url("../images/blue/vsIconMore.png");
+}
+.skin_blue .matMouVs .score span {
+  background: #1c74f1;
+  color: #fefefe;
+}
+.skin_blue .matMouVs .score span:before {
+  background: #0f3289;
+}
+.skin_blue .matMouVs .score em:before,
+.skin_blue .matMouVs .score em:after {
+  background: #397cdd;
+}
+.skin_blue .gamebox .item {
+  background: #f1f3f4;
+}
+.skin_blue .gamebox .item p {
+  color: #999;
+}
+.skin_blue .gamebox .item em {
+  color: #93989f;
+}
+.skin_blue .gamebox .win {
+  background: #4fb5ff;
+}
+.skin_blue .gamebox .win p {
+  color: #fff;
+}
+.skin_blue .gamebox .win em {
+  background: #1593ff;
+  color: #fff;
+}
+.skin_blue .mapList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.skin_blue .mapList li {
+  margin-right: 0.15rem;
+  position: relative;
+}
+.skin_blue .mapList li .gamebox:before {
+  width: 0.13rem;
+  height: 0.02rem;
+  background: #d1d1d1;
+  content: '';
+  position: absolute;
+  top: 1.02rem;
+  right: -0.15rem;
+}
+.skin_blue .mapList li .gamebox .item {
+  position: relative;
+}
+.skin_blue .mapList li .gamebox .item:before {
+  width: 0.02rem;
+  height: 0.4rem;
+  background: #d1d1d1;
+  content: '';
+  position: absolute;
+  left: 0;
+}
+.skin_blue .mapList li .gamebox .item:before {
+  top: -0.43rem;
+  bottom: auto;
+}
+.skin_blue .mapList li .gamebox .item:last-child:before {
+  top: auto;
+  bottom: -0.43rem;
+}
+.skin_blue .mapList li:first-child .gamebox .text,
+.skin_blue .mapList li:first-child .gamebox .time {
+  padding-left: 0rem;
+}
+.skin_blue .mapList li:first-child .gamebox .item:before,
+.skin_blue .mapList li:first-child .gamebox .item:after {
+  display: none;
+}
+.skin_blue .mapList li:nth-child(1) .proCess {
+  margin-top: 0.5rem;
+}
+.skin_blue .mapList li:nth-child(1) .proCess:first-child {
+  margin-top: 0rem;
+}
+.skin_blue .mapList li:nth-child(2) .gamebox:nth-child(2) {
+  margin-top: 2.56rem;
+}
+.skin_blue .mapList li:nth-child(3) .gamebox .item:before {
+  width: 0.02rem;
+  height: 1.66rem;
+}
+.skin_blue .mapList li:nth-child(3) .gamebox .item:before {
+  top: -1.71rem;
+  bottom: auto;
+}
+.skin_blue .mapList li:nth-child(3) .gamebox .item:last-child:before {
+  top: auto;
+  bottom: -1.71rem;
+}
+.skin_blue .mapList li:last-child {
+  margin-right: 0rem;
+}
+.skin_blue .mapList li:last-child .gamebox:before {
+  display: none;
+}
+.skin_blue .nberList {
+  height: 4.53rem;
+  margin-top: 0rem;
+  padding: 0 0.36rem;
+}
+.skin_blue .nberList li {
+  color: #fff;
+}
+.skin_blue .nberList li b {
+  font-style: normal;
+}
+.skin_blue .nberList .nber1 {
+  width: 2.12rem;
+  height: 4.53rem;
+  padding-top: 1.38rem;
+}
+.skin_blue .nberList .nber1 strong {
+  margin-top: 0.5rem;
+}
+.skin_blue .nberList .nber2,
+.skin_blue .nberList .nber3 {
+  width: 1.78rem;
+  height: 3.81rem;
+  margin-top: 0.4rem;
+  padding-top: 1.2rem;
+}
+.skin_blue .nberList .nber2 strong,
+.skin_blue .nberList .nber3 strong {
+  margin-top: 0.7rem;
+}
+.skin_blue .nberList .nber1 {
+  background-image: url("../images/blue/nberBg1.png");
+}
+.skin_blue .nberList .nber2 {
+  background-image: url("../images/blue/nberBg2.png");
+}
+.skin_blue .nberList .nber3 {
+  background-image: url("../images/blue/nberBg3.png");
+}
+.skin_blue .nberOther p i {
+  background-image: url("../images/blue/nberBg4.png");
+  background-size: 0.37rem 0.35rem;
+}
+.skin_blue .nberOther span em {
+  color: #333;
+}
+.skin_blue .mouRules a {
+  color: #2ba4ff;
+}
+.skin_blue .mouRules .tit {
+  background-image: url("../images/blue/gzTitBg.png");
+  background-size: 100% 100%;
+  width: 3.51rem;
+  height: 1.08rem;
+  padding: 0.1rem 0.15rem;
+}
+.skin_blue .mouRules .txt em {
+  color: #d3582d;
+}
+.skin_blue .mouRules .step p em {
+  color: #d3582d;
+}
+.skin_blue .mouRules .step p i {
+  background: #666a6f;
+  color: #fff;
+}
+.skin_blue .swpBanner .swiper-slide img {
+  border-radius: 0.1rem;
+}
+.skin_blue .gmList .img {
+  border-radius: 0.08rem;
+}
+.skin_blue .revList li {
+  border-radius: 0.1rem;
+}
+.skin_blue .revList .img:before {
+  background-image: url("../images/blue/iconRevVdo.png");
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 50%;
+  margin-left: -0.25rem;
+  top: 50%;
+  margin-top: -0.25rem;
+}
+.skin_blue .mouBanner {
+  border-radius: 0.1rem;
+}
+.skin_blue .cssCover {
+  padding-top: 0rem;
+}
+.skin_blue .cssCover .mfAbout {
+  background: #fff;
+}
+.skin_blue .cssCover .mfAbout:before,
+.skin_blue .cssCover .mfAbout:after {
+  display: none;
+}
+.skin_blue .cssCover .mfAbout-title {
+  font-size: 0.28rem;
+}
+.skin_blue .cssCover .mfAbout-item i {
+  background-image: url("../images/blue/mouIconAbout.png");
+}
+.skin_blue .cssCover .mfAbout-item p::after {
+  background-image: url("../images/blue/mouArrow.png");
+  background-size: 0.1rem 0.2rem;
+}
+.skin_blue .cssCover .mfAbout-btn {
+  background: #ddf7ff;
+  border: 1px solid #38ceff;
+  color: #38ceff;
+}
+.skin_blue .cssCover .mfFoot {
+  background: #181818;
+}
+.skin_blue .cssCover .mfFoot p {
+  color: #fff;
+}
+.skin_blue .cssCover .mfSlogon {
+  background-image: url("../images/blue/mouFootSloganGreen.png");
+  margin-top: 0rem;
+}
+/*	弹窗	*/
+.skin_blue .pcr_skin {
+  color: #308cff !important;
+}
+.skin_blue .pop {
+  background-image: url("../images/blue/ppTop.png");
+  background-size: 6rem 1.72rem;
+  background-color: #fff;
+  border-radius: 0.1rem;
+}
+.skin_blue .pop:before {
+  display: none;
+}
+.skin_blue .pop .iconDing {
+  background-image: url("../images/blue/ppIconDing.png");
+}
+.skin_blue .pop .iconGou {
+  background-image: url("../images/blue/ppIconGou.png");
+}
+.skin_blue .pptitle {
+  color: #308cff;
+}
+.skin_blue .ppbtns a {
+  border-radius: 0.08rem;
+}
+.skin_blue .ppbtns a:before,
+.skin_blue .ppbtns a:after {
+  display: none;
+}
+.skin_blue .ppbtns .abtn1 {
+  background: #ffa653;
+}
+.skin_blue .ppbtns .abtn2 {
+  background: #38ceff;
+}
+.skin_blue .ppbtns .abtn3 {
+  background: #38ceff;
+}
+.skin_blue .ppbtns .abtn3 i {
+  background-image: url("../images/blue/ddGpbmh.png");
+}
+.skin_blue .ppTjsq {
+  background: #38ceff;
+}
+.skin_blue .ppJiaru dd {
+  background: #fff;
+}
+.skin_blue .ppJiaru dd em {
+  color: #999;
+}
+.skin_blue .ppJiaru dd em.on i {
+  color: #333;
+}
+.skin_blue .fixBottom {
+  background-image: url("../images/blue/fixBottomTop.png");
+  background-size: 7.5rem 1.76rem;
+  background-color: #fff;
+}
+.skin_blue .fixBottom .fixDiaTit {
+  color: #308cff;
+}
+.skin_blue .fixOthScroll::-webkit-scrollbar-thumb,
+.skin_blue .fixOthScroll::-webkit-scrollbar {
+  width: 0.08rem;
+  -webkit-border-radius: 999em;
+  border-radius: 999em;
+}
+.skin_blue .fixOthScroll::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+.skin_blue .fixOthScroll::-webkit-scrollbar {
+  background: rgba(255,255,255,0);
+}
+.skin_blue .fixIvtJoin li {
+  background: #eee;
+}
+.skin_blue .fixIvtJoin .nums i {
+  background-image: url("../images/blue/iconUser.png");
+}
+.skin_blue .fixIvtJoin .user span {
+  background: #dcdcdc;
+}
+.skin_blue .fixEdBtns .btn_blue {
+  background: #38ceff;
+}
+.skin_blue .fixEdBtns .btn_yellow {
+  background: #ffa653;
+}
+.skin_blue .fixEdteam .item {
+  background: #eee;
+}
+.skin_blue .fixCapBtns span {
+  border-radius: 0.08rem;
+}
+.skin_blue .fixCapBtns span:before,
+.skin_blue .fixCapBtns span:after {
+  display: none;
+}
+.skin_blue .fixCapBtns .abtn1 {
+  background: #ffa653;
+}
+.skin_blue .fixCapBtns .abtn2 {
+  background: #38ceff;
+}
+.skin_blue .fixSpcBg:before {
+  background: url("../images/blue/fixBottomFot.png") no-repeat;
+  background-size: 100% 100%;
+  background-position: center top;
+  width: 7.5rem;
+  height: 1.55rem;
+  content: '';
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  z-index: -1;
+}
+.skin_blue .zmMadlist .img .clear {
+  background-image: url("../images/blue/clearFile.png");
+}
+.skin_blue .zmMadlist .file {
+  color: #add0fa;
+}
+.skin_blue .zmMadlist .file i {
+  background-image: url("../images/blue/iconFileAdd.png");
+}
+.skin_blue .zmMadlist li.on .img img {
+  border: 2px solid #3a92f9;
+}
+.skin_blue .creatTmlist span {
+  background-image: url("../images/blue/creatTabs.png");
+}
+/* end*/
+/* skins - other */

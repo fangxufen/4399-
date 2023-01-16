@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>弹框</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="false" id="twcClient" name="twcClient" />
+  <script type="text/javascript" src="js/FontSize.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+<style>
+  body {
+    background-color: #4c4c4c;
+  }
+
+</style>
+
+<body>
+  <!-- <div class="bg"> -->
+  <!-- 弹框1 -->
+  <div class="sub-frame">
+    <img class="frame-close" src="image/frameclose.png" alt="">
+    <!-- 时间 -->
+    <div class="frame-date">2022年11月1日</div>
+    <!-- 导航 -->
+    <div class="frame-nav">
+      <span class="nav-text nav-text-active">每日任务</span>
+      <span class="nav-text">季节蜡烛</span>
+      <span class="nav-text">大蜡烛</span>
+      <span class="nav-text">免费魔法</span>
+    </div>
+    <!-- 搜索 -->
+    <div class="frame-search">
+      <img onclick="btnclose()" class="search-close" style="display: none;" src="image/searchclose.png" alt="">
+      <input class="search-input" value="" placeholder="输入任务名称" type="text">
+      <div class="search-btn"><span>搜索</span></div>
+    </div>
+
+    <!-- 每日任务 -->
+    <div class="dailytasks">
+      <!--  -->
+      <div class="frame-choice">
+        <span style="margin-left: 0.06rem;">当前选择</span>
+        <span class="choice-num">（<span class="choice-count">0</span>/4）</span>
+      </div>
+      <!-- 导航 -->
+      <div class="frame-en-nav">
+        <span class="en-span en-active">晨岛</span>
+        <span class="en-span">云野</span>
+        <span class="en-span">雨林</span>
+        <span class="en-span">霞骨</span>
+        <span class="en-span">暮土</span>
+        <span class="en-span">禁阁</span>
+      </div>
+
+
+      <!-- 动作选择 -->
+      <div class="action actionshow">
+        <div class="action-item">
+          <img class="action-item-icon" src="image/frameicon.png" alt="">
+          <span class="action-item-title">向一位朋友做一个动作</span>
+          <div class="action-item-choice"></div>
+        </div>
+        <div class="action-item">
+          <img class="action-item-icon" src="image/frameicon.png" alt="">
+          <span class="action-item-title">在雨林重温先祖的美好回忆</span>
+          <div class="action-item-choice"></div>
+        </div>
+        <div class="action-item">
+          <img class="action-item-icon" src="image/frameicon.png" alt="">
+          <span class="action-item-title">面对冥龙</span>
+          <div class="action-item-choice"></div>
+        </div>
+        <div class="action-item">
+          <img class="action-item-icon" src="image/frameicon.png" alt="">
+          <span class="action-item-title">在雨林追逐散落的星光</span>
+          <div class="action-item-choice"></div>
+        </div>
+        <div class="action-item">
+          <img class="action-item-icon" src="image/frameicon.png" alt="">
+          <span class="action-item-title">在霞谷重温先祖的美好回忆</span>
+          <div class="action-item-choice"></div>
+        </div>
+        <div class="action-item">
+          <img class="action-item-icon" src="image/frameicon.png" alt="">
+          <span class="action-item-title">在霞谷重温先祖的美好回忆</span>
+          <div class="action-item-choice"></div>
+        </div>
+      </div>
+      <div class="action">
+        <div class="action-item">
+          <img class="action-item-icon" src="image/frameicon.png" alt="">
+          <span class="action-item-title">向一位朋友做一个动作</span>
+          <div class="action-item-choice"></div>
+        </div>
+      </div>
+      <div class="action">
+        <div class="action-item">
+          <img class="action-item-icon" src="image/frameicon.png" alt="">
+          <span class="action-item-title">111</span>
+          <div class="action-item-choice"></div>
+        </div>
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+      <!-- 按钮 -->
+    </div>
+    <!-- 季节蜡烛 -->
+    <div class="season domshow">
+      <!--  -->
+      <div class="frame-choice">
+        <span style="margin-left: 0.06rem;">当前选择</span>
+        <span class="choice-num">（<span class="choice-count">0</span>/4）</span>
+      </div>
+      <!-- 导航 -->
+      <div class="frame-en-nav">
+        <span class="en-span en-active">晨岛</span>
+        <span class="en-span">云野</span>
+        <span class="en-span">雨林</span>
+        <span class="en-span">霞骨</span>
+        <span class="en-span">暮土</span>
+        <span class="en-span">禁阁</span>
+      </div>
+      <!-- 动作选择 -->
+      <div class="action actionshow">
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg2.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg2.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+      </div>
+      <div class="action">
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg2.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+
+      <!-- 按钮 -->
+      <!-- <div class="frame-sub">
+          <span>确认提交</span>
+        </div> -->
+    </div>
+    <!-- 大蜡烛 -->
+    <div class="bigcandel domshow">
+      <!--  -->
+      <div class="frame-choice">
+        <span style="margin-left: 0.06rem;">当前选择</span>
+        <span class="choice-num">（<span class="choice-count">0</span>/4）</span>
+      </div>
+      <!-- 导航 -->
+      <div class="frame-en-nav">
+        <span class="en-span en-active">晨岛</span>
+        <span class="en-span">云野</span>
+        <span class="en-span">雨林</span>
+        <span class="en-span">霞骨</span>
+        <span class="en-span">暮土</span>
+        <span class="en-span">禁阁</span>
+      </div>
+      <!-- 动作选择 -->
+      <div class="action actionshow">
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg2.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg2.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+      </div>
+      <div class="action">
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg2.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+
+      <!-- 按钮 -->
+      <!-- <div class="frame-sub">
+          <span>确认提交</span>
+        </div> -->
+    </div>
+    <!-- 免费魔法 -->
+    <div class="magic domshow">
+      <!--  -->
+      <div class="frame-choice">
+        <span style="margin-left: 0.06rem;">当前选择</span>
+        <span class="choice-num">（<span class="choice-count">0</span>/4）</span>
+      </div>
+      <!-- 导航 -->
+      <div class="frame-en-nav">
+        <span class="en-span en-active">晨岛</span>
+        <span class="en-span">云野</span>
+        <span class="en-span">雨林</span>
+        <span class="en-span">霞骨</span>
+        <span class="en-span">暮土</span>
+        <span class="en-span">禁阁</span>
+      </div>
+      <!-- 动作选择 -->
+      <div class="action actionshow">
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <!-- 1111 -->
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg2.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg2.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+      </div>
+      <div class="action">
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg2.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+        <div class="action-item">
+          <img class="action-item-img" src="image/frameconimg.jpg" alt="">
+          <div class="action-item-choice"></div>
+          <span>动作</span>
+        </div>
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+      <div class="action">
+      </div>
+    </div>
+
+    <div class="frame-sub">
+      <span>确认提交</span>
+    </div>
+  </div>
+  <!-- 弹框2 -->
+  <div class="tips-frame">
+    <img class="tips-close" src="image/frameclose.png" alt="">
+    <div class="tips-content">
+      <span class="tips-con-title">浪漫烟花</span>
+      <span class="tips-con-con">使用朝天空发射一束美丽的烟花</span>
+    </div>
+  </div>
+  </div>
+
+  <!-- </div> -->
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script>
+  // 判断关闭按钮显隐
+  $(function () {
+    $('.search-input').on("input", function () {
+      if ($(this).val() == '') {
+        $('.search-close').hide();
+      } else {
+        $('.search-close').show();
+      }
+
+    })
+  })
+  function btnclose() {
+    $('.search-input').val("")
+    $('.search-close').hide();
+  }
+  // 导航切换
+  $('.nav-text').on("click", function () {
+    $(this).addClass('nav-text-active').siblings().removeClass("nav-text-active");
+    if ($(this).index() == 0) {
+      // 搜索框
+      $('.frame-search').removeClass('domshow')
+      $('.dailytasks').removeClass('domshow')
+      $('.season').addClass('domshow')
+      $('.bigcandel').addClass('domshow')
+      $('.magic').addClass('domshow')
+    } else if ($(this).index() == 1) {
+      $('.frame-search').addClass('domshow')
+      $('.dailytasks').addClass('domshow')
+      $('.season').removeClass('domshow')
+      $('.bigcandel').addClass('domshow')
+      $('.magic').addClass('domshow')
+    } else if ($(this).index() == 2) {
+      $('.frame-search').addClass('domshow')
+      $('.dailytasks').addClass('domshow')
+      $('.season').addClass('domshow')
+      $('.bigcandel').removeClass('domshow')
+      $('.magic').addClass('domshow')
+    } else if ($(this).index() == 3) {
+      $('.frame-search').addClass('domshow')
+      $('.dailytasks').addClass('domshow')
+      $('.season').addClass('domshow')
+      $('.bigcandel').addClass('domshow')
+      $('.magic').removeClass('domshow')
+    }
+  })
+
+  // 切换场景
+  $('.dailytasks .en-span').on("click", function () {
+    $(this).addClass('en-active').siblings().removeClass("en-active");
+    $('.dailytasks .action').eq($(this).index()).addClass("actionshow").siblings().removeClass("actionshow")
+  })
+  // var x = 0;
+  // var num = 0
+  $(".dailytasks .action-item-choice").on("click", function () {
+    var s = $(this).parent().index()
+    if ($(".dailytasks .choice-avtive").length < 4) {
+      $(this).toggleClass('choice-avtive')
+    } else {
+      $(this).removeClass('choice-avtive')
+    }
+    $(".dailytasks .choice-count").html($(".dailytasks .choice-avtive").length)
+
+    // console.log($(".choice-avtive").length)
+  })
+
+  // 切换场景 季节蜡烛
+  $('.season .en-span').on("click", function () {
+    $(this).addClass('en-active').siblings().removeClass("en-active");
+    $('.season .action').eq($(this).index()).addClass("actionshow").siblings().removeClass("actionshow")
+  })
+  $(".season .action-item-choice").on("click", function () {
+    var s = $(this).parent().index()
+    if ($(".season .choice-avtive").length < 4) {
+      $(this).toggleClass('choice-avtive')
+    } else {
+      $(this).removeClass('choice-avtive')
+    }
+    $(".season .choice-count").html($(".season .choice-avtive").length)
+    // $(".season .choice-avtive").html($(".season .choice-avtive").length)
+    // console.log($(".choice-avtive").length)
+  })
+
+  // 大蜡烛
+  $('.bigcandel .en-span').on("click", function () {
+    $(this).addClass('en-active').siblings().removeClass("en-active");
+    $('.bigcandel .action').eq($(this).index()).addClass("actionshow").siblings().removeClass("actionshow")
+  })
+  $(".bigcandel .action-item-choice").on("click", function () {
+    var s = $(this).parent().index()
+    if ($(".bigcandel .choice-avtive").length < 4) {
+      $(this).toggleClass('choice-avtive')
+    } else {
+      $(this).removeClass('choice-avtive')
+    }
+    $(".bigcandel .choice-count").html($(".bigcandel .choice-avtive").length)
+    // console.log($(".choice-avtive").length)
+  })
+
+  // 免费魔法
+  $('.magic .en-span').on("click", function () {
+    $(this).addClass('en-active').siblings().removeClass("en-active");
+    $('.magic .action').eq($(this).index()).addClass("actionshow").siblings().removeClass("actionshow")
+  })
+  $(".magic .action-item-choice").on("click", function () {
+    var s = $(this).parent().index()
+    if ($(".magic .choice-avtive").length < 4) {
+      $(this).toggleClass('choice-avtive')
+    } else {
+      $(this).removeClass('choice-avtive')
+    }
+    $(".magic .choice-count").html($(".magic .choice-avtive").length)
+    // console.log($(".choice-avtive").length)
+  })
+
+  $("")
+</script>
+
+</html>

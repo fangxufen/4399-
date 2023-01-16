@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>落樱</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="false" id="twcClient" name="twcClient" />
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+
+  <div class="tips1">
+    <div class="tips-title">
+      <a href="###" class="tips-back">
+        <img src="images/two-left.png" alt="">
+        <p class="tips-back-text">返回</p>
+      </a>
+    </div>
+    <p class="tips-text1">很抱歉，当前的浏览器版本不支持查看该内容，您可以使用浏览器极速/高速模式或更新高版本的IE浏览器查看更多内容。</p>
+    <p class="tips-text2">点击下方预约我们的游戏</p>
+    <div class="tips-btn">
+      <a class="tips-btn1" href="###">
+        <img src="images/sideicon1.png" alt="">
+        <p>
+          Android<br /><i>预约</i>
+        </p>
+      </a>
+      <a class="tips-btn2" href="###">
+        <img src="images/iphoneicon.png" alt="">
+        <p>
+          App Store <br /> <i>预约</i>
+        </p>
+      </a>
+    </div>
+    <div class="tips-bom">
+      <a href="###" class="tips-bom-item bom-icon1">
+        <img class="tips-bom-item-img" src="images/bicon-qq.png" alt="">
+        <div class="frame-hover11">
+          <div class="frame-6-box">
+            <div class="frame-6">
+              <!-- <img class="frame-close" src="images/frame-close.png" alt=""> -->
+              <!-- <div class="frame-title">官方QQ群</div> -->
+              <div class="frame-content">
+                <div class="frame-content-item">
+                  <span class="con-span1">QQ1群</span>
+                  <span class="con-span2">123456789</span>
+                </div>
+                <div class="frame-content-item">
+                  <span class="con-span1">QQ1群</span>
+                  <span class="con-span2">123456789</span>
+                </div>
+                <div class="frame-content-item">
+                  <span class="con-span1">QQ1群</span>
+                  <span class="con-span2">123456789</span>
+                </div>
+                <div class="frame-content-item">
+                  <span class="con-span1">QQ1群</span>
+                  <span class="con-span2">123456789</span>
+                </div>
+              </div>
+            </div>
+            <div class="frame-wb">
+              <span>— 官方交流群 —</span>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="###" class="tips-bom-item bom-icon2">
+        <img class="tips-bom-item-img" src="images/bicon-wx.png" alt="">
+        <div class="frame-hover22">
+          <div class="frame-5">
+            <div class="frame-code">
+              <img src="images/sidecode.png" alt="">
+            </div>
+            <span>— 官方微信 —</span>
+          </div>
+        </div>
+      </a>
+      <a href="###" class="tips-bom-item bom-icon3">
+        <img class="tips-bom-item-img" src="images/bicon-wb.png" alt="">
+        <div class="frame-hover33">
+          <div class="frame-5">
+            <div class="frame-code">
+              <img src="images/sidecode.png" alt="">
+            </div>
+            <span>— 官方微博 —</span>
+          </div>
+        </div>
+      </a>
+      <a href="###" class="tips-bom-item bom-icon4">
+        <img class="tips-bom-item-img" src="images/bicon-lt.png" alt="">
+      </a>
+    </div>
+  </div>
+
+  <!-- <div class="frame-hover11 hover">
+    <div class="frame-5">
+      <div class="frame-code">
+        <img src="images/sidecode.png" alt="">
+      </div>
+      <span>— 官方Q群 —</span>
+    </div>
+  </div>
+  <div class="frame-hover22 hover">
+    <div class="frame-5">
+      <div class="frame-code">
+        <img src="images/sidecode.png" alt="">
+      </div>
+      <span>— 官方微信 —</span>
+    </div>
+  </div>
+  <div class="frame-hover33 hover">
+    <div class="frame-5">
+      <div class="frame-code">
+        <img src="images/sidecode.png" alt="">
+      </div>
+      <span>— 官方微博 —</span>
+    </div>
+  </div>
+  <div class="frame-hover44 hover">
+    <div class="frame-5">
+      <div class="frame-code">
+        <img src="images/sidecode.png" alt="">
+      </div>
+      <span>— 论坛交流 —</span>
+    </div>
+  </div> -->
+
+
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/ie.js"></script>
+  <script>
+    var n = IEVersion()
+    if (n <= 8) {
+      $(".tips-back").hide()
+    }
+    // 鼠标移入后 qq
+    $(".bom-icon1").on("mouseover", function () {
+      $(".frame-hover11").show()
+    })
+    $(".bom-icon1").on("mouseout", function () {
+      $(".frame-hover11").hide()
+    })
+    //微信
+    $(".bom-icon2").on("mouseover", function () {
+      $(".frame-hover22").show()
+    })
+    $(".bom-icon2").on("mouseout", function () {
+      $(".frame-hover22").hide()
+    })
+    // 微博
+    $(".bom-icon3").on("mouseover", function () {
+      $(".frame-hover33").show()
+    })
+    $(".bom-icon3").on("mouseout", function () {
+      $(".frame-hover33").hide()
+    })
+    // 论坛交流
+    $(".bom-icon4").on("mouseover", function () {
+      $(".frame-hover44").show()
+    })
+    $(".bom-icon4").on("mouseout", function () {
+      $(".frame-hover44").hide()
+    })
+  </script>
+</body>
+
+</html>

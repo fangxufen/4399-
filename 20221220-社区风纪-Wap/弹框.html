@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>社区风纪</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="false" id="twcClient" name="twcClient" />
+  <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="css/video-js.css" type="text/css">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="js/rem.js"></script>
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="dia-box">
+    <div class="bin">BIN叔</div>
+    <div class="dia-con">
+      <a href="###" class="dia-close">关闭</a>
+      <div class="dia-txt scroll">
+        <p>介绍文案/数据说明</p>
+        每个文本都可以单独点击，点击跳转指定的
+        论坛、帖子、网址链接、空模板、文章等。每个文本都可以单独点击，点击跳转指定的
+        论坛、帖子、网址链接、空模板、文章等。每个文本都可以单独点击，点击跳转指定的
+        论坛、帖子、网址链接、空模板、文章等。
+
+      </div>
+    </div>
+    <div class="dia-btn">
+      <a href="#">好的</a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="frame">
+    <img class="frame-close" src="images/close2.png" alt="">
+    <p class="frame-title">我当前的风纪勋章</p>
+    <div class="swiper-container frame-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/i.png">
+          </a>
+          <p>风纪守护者</p>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/i.png">
+          </a>
+          <p>风纪守护者</p>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/i.png">
+          </a>
+          <p>风纪守护者</p>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/i.png">
+          </a>
+          <p>风纪守护者</p>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/i.png">
+          </a>
+          <p>风纪守护者</p>
+        </div>
+        <div class="swiper-slide">
+          <a href="#">
+            <img src="images/i.png">
+          </a>
+          <p>风纪守护者</p>
+        </div>
+      </div>
+    </div>
+    <div class="frame-text-box">
+      <p class="frame-text">
+        <img src="images/icon5.png" alt="">
+        成为监察员，并且当月有效举报数量超过5条可获得11
+      </p>
+      <p class="frame-text frame-text-unshow">
+        <img src="images/icon5.png" alt="">
+        成为监察员，并且当月有效举报数量超过5条可获得22
+      </p>
+      <p class="frame-text frame-text-unshow">
+        <img src="images/icon5.png" alt="">
+        成为监察员，并且当月有效举报数量超过5条可获得33
+      </p>
+      <p class="frame-text frame-text-unshow">
+        <img src="images/icon5.png" alt="">
+        成为监察员，并且当月有效举报数量超过5条可获得44
+      </p>
+      <p class="frame-text frame-text-unshow">
+        <img src="images/icon5.png" alt="">
+        成为监察员，并且当月有效举报数量超过5条可获得55
+      </p>
+      <p class="frame-text frame-text-unshow">
+        <img src="images/icon5.png" alt="">
+        成为监察员，并且当月有效举报数量超过5条可获得66
+      </p>
+    </div>
+
+    <p class="frame-btn"><a href="###">佩戴</a></p>
+    <p class="frame-btn frame-btn-active"><a href="###">佩戴</a></p>
+    <p class="frame-btn2"><a href="###">查看更多勋章 ></a></p>
+  </div>
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/video.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script>
+    var welSwiper = new Swiper('.frame-swiper', {
+      centeredSlides: true,
+      loop: true,
+      effect: 'coverflow',
+      slidesPerView: 'auto',
+      initialSlide: 0,
+      coverflowEffect: {
+        rotate: 0,
+        stretch: '-2%',
+        depth: 80,
+        modifier: 2,
+        slideShadows: false
+      },
+      on: {
+        slideChangeTransitionStart: function () {
+          var n = this.realIndex
+          console.log(n)
+          $(".frame-text-box .frame-text").eq(n).removeClass("frame-text-unshow").siblings().addClass("frame-text-unshow")
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

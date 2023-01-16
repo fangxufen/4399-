@@ -1,0 +1,125 @@
+.code-item {
+  position: relative;
+  width: 6.45rem;
+  margin: 0.2rem auto 0.3rem;
+  border: 1px solid #a4c3b6;
+  overflow: hidden;
+
+  .un-img {
+    width: 0.79rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .item-prize {
+    padding: 0.15rem 0;
+    width: 100%;
+    border-bottom: 1px solid #a4c3b6;
+    background-color: #e8f7f0;
+
+    p {
+      padding: 0 0.2rem;
+      font-size: 0.28rem;
+      line-height: 0.48rem;
+      color: #333333;
+
+      a {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .item-con {
+    width: 100%;
+    // height: 1.1rem;
+    background-color: #ffffff;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        padding: 0.12rem 0.15rem;
+
+        p {
+          width: 4.2rem;
+          line-height: 0.48rem;
+
+          &:nth-child(2) {
+            font-size: 0.24rem;
+            color: #7a7979;
+          }
+        }
+
+        .con-text1 {
+          font-size: 0.28rem;
+          color: #333333;
+          font-weight: bold;
+        }
+
+        .con-text2 {
+          font-size: 0.28rem;
+          color: #333333;
+
+          // font-weight: bold;
+          a {
+            color: #ef544f;
+            text-decoration: underline;
+          }
+        }
+
+        .btn {
+          font-size: 0.24rem;
+          color: #ffffff;
+          text-align: center;
+          display: block;
+          width: 0.99rem;
+          height: 0.55rem;
+          line-height: 0.56rem;
+          background: url("../images/btn1.png") no-repeat 0 0;
+          background-size: 100% 100%;
+          margin-bottom: 0.08rem;
+        }
+
+        em {
+          display: block;
+          font-size: 0.24rem;
+          color: #bf6767;
+        }
+
+
+      }
+
+      .con-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-right: 0.08rem;
+      }
+
+
+    }
+  }
+
+
+}
+
+.code-item-un {
+  filter: grayscale(100%);
+}
+
+.fixlk-btn {
+  position: relative;
+
+  p {
+    position: absolute;
+    font-size: 0.2rem;
+    color: #ffffff;
+    top: 50%;
+    left: 50%;
+    white-space: nowrap;
+    transform: translate(-50%, -50%);
+  }
+}

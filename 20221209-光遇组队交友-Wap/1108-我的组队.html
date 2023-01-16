@@ -1,0 +1,218 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>内页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta content="false" id="twcClient" name="twcClient" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=20220804">
+	<script type="text/javascript">
+		var w = window, d = document.documentElement, c, dpr = window.devicePixelRatio;
+		function init_viewport() {
+			var dWidth = d.clientWidth;
+			dWidth > 750 && (dWidth = 750);
+			var a = (dWidth / 7.5).toFixed(2);
+			d.style.fontSize = a + "px";
+			document.documentElement.setAttribute("data-dpr", dpr);
+			var b = parseFloat(w.getComputedStyle(d, null).fontSize);
+			var ua = navigator.userAgent;
+			if (/QQ\//i.test(ua) && /MQQBrowser/i.test(ua)) {
+				return;
+			}
+			if (a != b) {
+				a = a * a / b;
+				d.style.fontSize = a + "px";
+			}
+		}
+		init_viewport();
+		w.addEventListener("resize", function () {
+			clearTimeout(c), c = setTimeout(init_viewport, 300)
+		}, !1)
+	</script>
+</head>
+
+<body>
+	<div class="fixBarNav">
+		<a href="javascript:;" class="back"><i></i><em>返回</em></a>
+		<p>我的组队</p>
+		<a href="javascript:;" class="refresh">刷新</a>
+	</div>
+	<div class="pageScroll">
+
+		<!-- 1108 -->
+		<ul class="grupNav">
+			<li class="on">我发布的</li>
+			<li>我参与的</li>
+		</ul>
+		<div class="grupWrap">
+			<div class="grupCount">
+				
+
+		<div class="noTeam" onclick="$(this).hide();$('.hasTeam').show()" style="display:none">
+			<p>暂未发布过组队信息，点击下方按钮前往发布</p>
+			<a href="javascript:;" class="sendNt">发布新组队</a>
+		</div>
+		<div class="hasTeam" onclick="$(this).hide();$('.noTeam').show()">
+			<div class="hasTip">*注：已成功的组队将保留3天，3天后自动删除~</div>
+			<ul class="restlist">
+				<li>
+					<div class="collect">
+						<span>7月20日发布</span>
+						<em class="yes"></em>
+					</div>
+					<div class="skip">
+						<a href="###" class="user">
+							<img src="https://fakeimg.pl/68/ff6600/fff/?text=banner" alt="">
+							<strong>晚睡早起是你</strong>
+							<p class="dense"><i></i>保密</p>
+						</a>
+						<a href="###" class="btn">查看帖子</a>
+					</div>
+					<div class="label">
+						<span>走开</span>
+						<span>别吵</span>
+					</div>
+					<div class="name">发起者希望你给TA取的昵称：大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗</div>
+					<div class="content">
+						<a href="###">哦嗨哟帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题</a>
+					</div>
+					<div class="teamBtns">
+						<a href="javascript:;" class="cancel">取消参与</a>
+						<a href="javascript:;" class="invalid">组队已失效</a>
+						<a href="javascript:;" class="succs">确认组队成功</a>
+					</div>
+				</li>
+				<li>
+					<div class="collect">
+						<span>7月20日发布</span>
+						<em class="yes"></em>
+					</div>
+					<div class="skip">
+						<a href="###" class="user">
+							<img src="https://fakeimg.pl/68/ff6600/fff/?text=banner" alt="">
+							<strong>晚睡早起是你</strong>
+							<p class="boy"><i></i>男生</p>
+						</a>
+						<a href="###" class="btn">查看帖子</a>
+					</div>
+					<div class="label">
+						<span>走开</span>
+						<span>别吵</span>
+						<span>安静</span>
+						<span>别说话</span>
+						<span>哦嗨哟</span>
+						<span>破老米斯</span>
+						<span>因缺思厅</span>
+						<span>哟哟哟哟</span>
+					</div>
+					<div class="name">发起者希望你给TA取的昵称：大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗</div>
+					<div class="content">
+						<a href="###">哦嗨哟帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题</a>
+					</div>
+					<div class="teamBtns">
+						<a href="javascript:;" class="cancel">取消参与</a>
+						<a href="javascript:;" class="invalid">组队已失效</a>
+						<a href="javascript:;" class="succs">确认组队成功</a>
+					</div>
+				</li>
+			</ul>
+			<div class="loadMsg pb20">
+				<div class="isLoad"><i class="iconXz"></i>拼尽全力加载中...</div>
+				<div class="noThing" style="display:none">已经抵达了终点哦~</div>
+			</div>
+		</div>
+
+			</div>
+			<div class="grupCount" style="display:none">
+			
+
+		<div class="noTeam" onclick="$(this).hide();$('.hasTeam').show()" style="display:none">
+			<p>暂未发布过组队信息，点击下方按钮前往发布</p>
+			<a href="javascript:;" class="sendNt">发布新组队</a>
+		</div>
+		<div class="hasTeam" onclick="$(this).hide();$('.noTeam').show()">
+			<div class="hasTip">*注：已成功的组队将保留3天，3天后自动删除~</div>
+			<ul class="restlist">
+				<li>
+					<div class="collect">
+						<span>7月20日发布</span>
+						<em class="yes"></em>
+					</div>
+					<div class="skip">
+						<a href="###" class="user">
+							<img src="https://fakeimg.pl/68/ff6600/fff/?text=banner" alt="">
+							<strong>晚睡早起是你</strong>
+							<p class="dense"><i></i>保密</p>
+						</a>
+						<a href="###" class="btn">查看帖子</a>
+					</div>
+					<div class="label">
+						<span>走开</span>
+						<span>别吵</span>
+					</div>
+					<div class="name">发起者希望你给TA取的昵称：大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗</div>
+					<div class="content">
+						<a href="###">哦嗨哟帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题</a>
+					</div>
+					<div class="teamBtns">
+						<a href="javascript:;" class="cancel">取消参与</a>
+						<a href="javascript:;" class="update">更新组队时间</a>
+						<a href="javascript:;" class="succs">确认组队成功</a>
+					</div>
+				</li>
+				<li>
+					<div class="collect">
+						<span>7月20日发布</span>
+						<em class="yes"></em>
+					</div>
+					<div class="skip">
+						<a href="###" class="user">
+							<img src="https://fakeimg.pl/68/ff6600/fff/?text=banner" alt="">
+							<strong>晚睡早起是你</strong>
+							<p class="boy"><i></i>男生</p>
+						</a>
+						<a href="###" class="btn">查看帖子</a>
+					</div>
+					<div class="label">
+						<span>走开</span>
+						<span>别吵</span>
+						<span>安静</span>
+						<span>别说话</span>
+						<span>哦嗨哟</span>
+						<span>破老米斯</span>
+						<span>因缺思厅</span>
+						<span>哟哟哟哟</span>
+					</div>
+					<div class="name">发起者希望你给TA取的昵称：大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗</div>
+					<div class="content">
+						<a href="###">哦嗨哟帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题帖子标题</a>
+					</div>
+					<div class="teamBtns">
+						<a href="javascript:;" class="cancel">取消参与</a>
+						<a href="javascript:;" class="update">更新组队时间</a>
+						<a href="javascript:;" class="succs">确认组队成功</a>
+					</div>
+				</li>
+			</ul>
+			<div class="loadMsg pb20">
+				<div class="isLoad"><i class="iconXz"></i>拼尽全力加载中...</div>
+				<div class="noThing" style="display:none">已经抵达了终点哦~</div>
+			</div>
+		</div>
+			</div>
+		</div>
+		<!-- end -->
+	</div>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/HanZo.js"></script>
+	<script type="text/javascript">
+		$('.autodiv').click(function(){
+			$(this).find('i').toggleClass('on')
+		})
+	</script>
+</body>
+</html>

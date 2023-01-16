@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>内页</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta content="false" id="twcClient" name="twcClient" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=20220804">
+	<script type="text/javascript">
+		var w = window, d = document.documentElement, c, dpr = window.devicePixelRatio;
+		function init_viewport() {
+			var dWidth = d.clientWidth;
+			dWidth > 750 && (dWidth = 750);
+			var a = (dWidth / 7.5).toFixed(2);
+			d.style.fontSize = a + "px";
+			document.documentElement.setAttribute("data-dpr", dpr);
+			var b = parseFloat(w.getComputedStyle(d, null).fontSize);
+			var ua = navigator.userAgent;
+			if (/QQ\//i.test(ua) && /MQQBrowser/i.test(ua)) {
+				return;
+			}
+			if (a != b) {
+				a = a * a / b;
+				d.style.fontSize = a + "px";
+			}
+		}
+		init_viewport();
+		w.addEventListener("resize", function () {
+			clearTimeout(c), c = setTimeout(init_viewport, 300)
+		}, !1)
+	</script>
+</head>
+
+<body>
+	<div class="fixBarNav">
+		<a href="javascript:;" class="back"><i></i><em>返回</em></a>
+		<p>发布组队</p>
+		<a href="javascript:;" class="tmTips">说明</a>
+	</div>
+	<div class="pageScroll">
+		<div class="creatTeam">
+			<dl class="multi">
+				<dt>交友标签（可多选）</dt>
+				<dd>
+					<span>找CP</span>
+					<span>找监护人</span>
+					<span>找崽崽</span>
+					<span>交友聊天</span>
+					<span>互火互心</span>
+					<span>一起跑图</span>
+					<span>固玩DD</span>
+					<span>同城交友</span>
+				</dd>
+			</dl>
+			<dl class="upfile">
+				<dt>上传交友二维码（必填）</dt>
+				<dd>
+					<div class="filebox">
+						<div class="first" onclick="$(this).hide();$('.again').show();$('.img').show()">
+							<a href="javascript:;" class="clkFile">点击上传<input type="file"></a>
+						</div>
+						<div class="again" style="display:none">
+							<a href="javascript:;" class="clear"></a>
+							<a href="javascript:;" class="clkFile">重新上传<input type="file"></a>
+						</div>
+						<div class="img" style="display:none">
+							<img src="https://via.placeholder.com/650x290/790bcd/fff" alt="">
+						</div>
+					</div>
+				</dd>
+			</dl>
+			<ul class="ctNav">
+				<li class="on"><i></i><span>交友宣言</span></li>
+				<li><i></i><span>补充交友帖</span></li>
+			</ul>
+			<div class="ctWrap">
+				<div class="ctCount">
+					<div class="select">
+						<div class="seltit"><p><em>选择你的交友宣言</em></p><i></i></div>
+						<div class="selcont">
+							<p>春有百花秋有月</p>
+							<p>夏有凉风冬有雪</p>
+							<p>等闲识得东风面</p>
+							<p>夏有凉风冬有雪</p>
+							<p>等闲识得东风面</p>
+							<p>夏有凉风冬有雪</p>
+							<p>等闲识得东风面</p>
+							<p>万紫千红总是春</p>
+						</div>
+					</div>
+				</div>
+				<div class="ctCount" style="display:none">
+					<div class="iptWrap">
+						<div class="iptbox">
+							<input type="text" placeholder="请输入帖子链接">
+							<span class="clear" style="display:none"></span>
+						</div>
+						<div class="myTie">我的帖子</div>
+					</div>
+				</div>
+			</div>
+			<!-- 1108 add -->
+			
+			<dl class="newInputs mt25">
+				<dt>我的对方取的昵称</dt>
+				<dd>
+					<div class="iptBox">
+						<span class="newclear" style="display:none"></span>
+						<input type="text" placeholder="请输入你想给对方备注的昵称">
+					</div>
+				</dd>
+			</dl>
+			<dl class="newInputs mt25">
+				<dt>你希望对方给你取的昵称</dt>
+				<dd>
+					<div class="iptBox">
+						<span class="newclear" style="display:none"></span>
+						<input type="text" placeholder="请输入你想让对方给你备注的昵称">
+					</div>
+				</dd>
+			</dl>
+			<!-- end -->
+			<dl class="single">
+				<dt>性别</dt>
+				<dd>
+					<span>保密</span>
+					<span>男生</span>
+					<span>女生</span>
+				</dd>
+			</dl>
+			<dl class="single">
+				<dt>服务器</dt>
+				<dd>
+					<span>安卓</span>
+					<span>IOS</span>
+				</dd>
+			</dl>
+			<dl class="single">
+				<dt>光翼数</dt>
+				<dd>
+					<span>0-5翼</span>
+					<span>6-10翼</span>
+					<span>11翼以上</span>
+				</dd>
+			</dl>
+			<dl class="single">
+				<dt>毕业进度</dt>
+				<dd>
+					<span>0-2图毕业</span>
+					<span>3-5图毕业</span>
+					<span>全图毕业</span>
+				</dd>
+			</dl>
+			<div class="sendBtns">
+				<a href="javascript:;" class="a1">取消</a>
+				<a href="javascript:;" class="a2">确定发布</a>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/HanZo.js"></script>
+	<script type="text/javascript">
+		$('.autodiv').click(function(){
+			$(this).find('i').toggleClass('on')
+		})
+	</script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+html {
+	font-size: (750px/7.5);  //  750/7.5
+	font-size: 13.33333vw // 100/7.5
+}
+@media screen and (max-width:320px) {
+	html {
+		font-size: (320px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:321px) and (max-width:360px) {
+	html {
+		font-size: (360px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:361px) and (max-width:375px) {
+	html {
+		font-size: (375px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:376px) and (max-width:393px) {
+	html {
+		font-size: (393px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:394px) and (max-width:412px) {
+	html {
+		font-size: (412px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:413px) and (max-width:414px) {
+	html {
+		font-size: (414px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:415px) and (max-width:480px) {
+	html {
+		font-size: (480px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:481px) and (max-width:540px) {
+	html {
+		font-size: (540px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:541px) and (max-width:640px) {
+	html {
+		font-size: (640px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:641px) and (max-width:720px) {
+	html {
+		font-size: (720px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:721px) and (max-width:750px) {
+	html {
+		font-size: (750px/7.5);
+		font-size: 13.33333vw
+	}
+}
+@media screen and (min-width:751px) {
+	html {
+		font-size: (750px/7.5);
+	}
+}

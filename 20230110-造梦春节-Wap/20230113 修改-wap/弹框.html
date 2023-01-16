@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>造梦春节Wap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="false" id="twcClient" name="twcClient" />
+  <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+  <link rel="stylesheet" href="css/video-js.css" type="text/css">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <script src="js/rem.js"></script>
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="frame">
+    <img class="frame-ficon2" src="images/f-icon2.png" alt="">
+    <a href="###" class="frame-close"></a>
+    <p class="frame-text2">请进行二次确认相关信息填写无误，确认后无法再次修改
+    </p>
+    <div class="frame-select">
+      <p class="select-text">请选择区服</p>
+      <ul class="select-down">
+        <li><a href="###">1区 齐天大圣 </a></li>
+        <li><a href="###">2区斗战胜佛</a></li>
+        <li><a href="###">3区 金蝉子</a></li>
+        <li> <a href="###">4区 XXXX</a></li>
+      </ul>
+    </div>
+    <div class="frame-btn">
+      <a href="###" class="btn1"></a>
+      <a href="###" class="btn2"></a>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="frame">
+    <img class="frame-ficon2" src="images/f-icon2.png" alt="">
+    <a href="###" class="frame-close"></a>
+    <div class="frame-title">
+      <a>恭喜仙尊获得额外大礼！</a>
+    </div>
+    <p class="frame-text mb120">奖励邮件会在领取后24小时内自动发放至仙尊的账号
+      <br>
+      请在游戏邮件中查看领取！
+    </p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="frame">
+    <img class="frame-ficon2" src="images/f-icon2.png" alt="">
+    <a href="###" class="frame-close"></a>
+    <p class="frame-text mt105">您的账号还没有绑定区服
+      <br>
+      无法领取礼包
+      <br>
+      请先【绑定区服】
+    </p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="frame">
+    <img class="frame-ficon2" src="images/f-icon2.png" alt="">
+    <a href="###" class="frame-close"></a>
+    <p class="frame-text mt105">您还没有完成每日对局任务
+      <br>
+      无法领取礼包
+    </p>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="frame">
+    <img class="frame-ficon2" src="images/f-icon2.png" alt="">
+    <a href="###" class="frame-close"></a>
+    <div class="frame-title mb30">
+      <a>适龄提示&nbsp;</a>
+    </div>
+    <p class="frame-text3">
+      1、本游戏是一款MOBA类游戏，适用于年满 12 周岁及以上的用户，建议未成年人在家长监护下使用游戏产品。
+      <br>
+      2、本游戏以中国家喻户晓的西游记IP为背景，基于原著进行改编，讲述师徒五人经历重重艰险，最终战胜六耳猕猴的经典故事。游戏中设有多人竞技，鼓励玩家通过思考和训练达到目标。游戏中有基于文字的陌生人社交系统，系统的管理严格遵循相关法律法规。2
+      <br>
+      3、本游戏中有用户实名认证系统，认证为未成年人的用户将接受以下管理：游戏中部分玩法和道具需要付费。未满 8 周岁的用户不能付费；8 周岁以上未满 16 周岁的未成年人用户，单次充值金额不得超过 50
+      元人民币，每月充值金额累计不得超过
+      200元人民币；16 周岁以上的未成年人用户，单次充值金额不得超过 100 元人民币，每月充值金额累计不得超过 400 元人民币。未成年账号仅在周五、周六、周日和法定节假日的20时至21时拥有1小时游戏时间。
+      <br>
+      4、游戏竞技中的操作有助于锻炼玩家的大脑反应速度和手眼协调能力，能够带给玩家积极愉悦的情绪体验，增强玩家的自信心。基于团队的玩法能够锻炼玩家的沟通能力和协作能力。
+    </p>
+  </div>
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/video.min.js"></script>
+  <script src="js/swiper.js"></script>
+  <script>
+    $(function () {
+      $(".select-text").on("click", function () {
+        $(".select-down").toggleClass("select-down-h")
+      })
+      $(".select-down li").on("click", function () {
+        // console.log($(this).text())
+        $(".select-down").toggleClass("select-down-h")
+        $(".select-text").text($(this).text())
+      })
+    })
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>弹窗</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta content="false" id="twcClient" name="twcClient" />
+	<link rel="stylesheet" type="text/css" href="css/style.css?v=20220804">
+	<script type="text/javascript">
+		var w = window, d = document.documentElement, c, dpr = window.devicePixelRatio;
+		function init_viewport() {
+			var dWidth = d.clientWidth;
+			dWidth > 750 && (dWidth = 750);
+			var a = (dWidth / 7.5).toFixed(2);
+			d.style.fontSize = a + "px";
+			document.documentElement.setAttribute("data-dpr", dpr);
+			var b = parseFloat(w.getComputedStyle(d, null).fontSize);
+			var ua = navigator.userAgent;
+			if (/QQ\//i.test(ua) && /MQQBrowser/i.test(ua)) {
+				return;
+			}
+			if (a != b) {
+				a = a * a / b;
+				d.style.fontSize = a + "px";
+			}
+		}
+		init_viewport();
+		w.addEventListener("resize", function () {
+			clearTimeout(c), c = setTimeout(init_viewport, 300)
+		}, !1)
+	</script>
+</head>
+
+<body style="background:#28407b">
+
+	<br><br>
+
+
+	<br>
+
+	<div class="pop">
+		<span class="ppclose"></span>
+		<div class="ppcont">
+			<div class="pptitle">
+				<i></i>
+				<span><em>TA的交友二维码</em></span>
+				<i></i>
+			</div>
+			<!-- 1108 add -->
+			<div class="ppnick">发起者希望你给TA取的昵称：大板栗大板栗</div>
+			<!-- end -->
+			<div class="ppewm">
+				<img src="https://via.placeholder.com/590x270/f60/fff" alt="">
+			</div>
+			<div class="ppbtns">
+				<a href="javascript:;" class="a2"><i class="i2"></i>已失效</a>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="pop">
+		<span class="ppclose"></span>
+		<div class="ppcont">
+			<div class="pptitle">
+				<i></i>
+				<span><em>温馨提示</em></span>
+				<i></i>
+			</div>
+			<!-- 1108 add -->
+			<div class="mt30">你最近参与了其他玩家的组队，若组队成功的话，记得前往“我的组队”进行反馈哦~</div>
+			<div class="mt10 fs24 pcr3">位置：交友中心首页——“我的组队”——“我参与的”</div>
+			<!-- end -->
+			<div class="ppbtns">
+				<a href="javascript:;" class="a1">前往我参与的</a>
+				<a href="javascript:;" class="a3">确定</a>
+			</div>
+		</div>
+	</div>
+
+	<br>
+
+	<!-- 20221209 新增 开始 -->
+	<div class="pop">
+		<span class="ppclose"></span>
+		<div class="ppcont">
+			<div class="pptitle">
+				<i></i>
+				<span><em>寻·光</em></span>
+				<i></i>
+			</div>
+			<!-- 1108 add -->
+			<div class="pop-text">每天10次，随机匹配最适合你的一位光之子。</div>
+			<div class="pop-load">
+				<img src="images/iconLoad.png" alt="">
+				<p>正在匹配中...</p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="pop">
+		<span class="ppclose"></span>
+		<div class="ppcont">
+			<div class="pptitle">
+				<i></i>
+				<span><em>寻·光</em></span>
+				<i></i>
+			</div>
+			<!-- 1108 add -->
+			<div class="pop-text2">每天10次，随机匹配最适合你的一位光之子。</div>
+			<p class="pop-text3">今日匹配次数用完啦，明天再来吧~</p>
+			<div class="ppbtns">
+				<a href="javascript:;" class="a1">确定</a>
+				<!-- <a href="javascript:;" class="a3">确定</a> -->
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="pop">
+		<span class="ppclose"></span>
+		<div class="ppcont">
+			<div class="pptitle">
+				<i></i>
+				<span><em>寻·光</em></span>
+				<i></i>
+			</div>
+			<div class="pop-text2">每天10次，随机匹配最适合你的一位光之子。</div>
+			<ul class="restlist frame">
+				<li>
+					<div class="skip">
+						<a href="###" class="user">
+							<img src="https://fakeimg.pl/68/ff6600/fff/?text=banner" alt="">
+							<strong>晚睡早起是你</strong>
+							<p class="dense"><i></i>保密</p>
+						</a>
+					</div>
+					<div class="label">
+						<span>走开</span>
+						<span>别吵</span>
+						<span>别吵</span>
+						<span>别吵</span>
+						<span>别吵</span>
+						<span>别吵</span>
+						<span>别吵</span>
+					</div>
+					<div class="name">发起者希望你给TA取的昵称：大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗大板栗</div>
+				</li>
+
+			</ul>
+			<div class="pop-text2 pad">TA与你匹配度为96%，快去加个好友吧！</div>
+			<div class="ppbtns">
+				<a href="javascript:;" class="a1">查看二维码</a>
+				<a href="javascript:;" class="a3">重新匹配</a>
+			</div>
+		</div>
+	</div>
+	<!-- 20221209 新增 结束 -->
+
+</body>
+
+</html>

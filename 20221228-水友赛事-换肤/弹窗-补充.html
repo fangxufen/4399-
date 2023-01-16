@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>弹窗</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta content="false" id="twcClient" name="twcClient" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/skin.css">
+	<link rel="stylesheet" type="text/css" href="css/skinys.css">
+	<script type="text/javascript" src="js/FontSize.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/HanZo.js"></script>
+</head>
+
+<body style="background:#000">
+
+	<!-- 无用按钮 -->
+	<div id="testFuc"
+		style="background:#000;width:1rem;height:1rem;line-height:1rem;text-align:center;color:#fff;position:fixed;left:50%;margin-left: 2.75rem;top:.4rem;border-radius:9999rem;z-index:10000">
+		换肤</div>
+	<!-- end -->
+	<div id="testFuc2"
+		style="background:#000;width:1rem;height:1rem;line-height:1rem;text-align:center;color:#fff;position:fixed;left:50%;margin-left: 2.75rem;top:1.5rem;border-radius:9999rem;z-index:10000">
+		换肤2</div>
+
+	<!-- 无用内容css -->
+	<style>
+		.testBtn {
+			width: 7.5rem;
+			margin: .3rem auto 0;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.testBtn a {
+			width: 100%;
+			height: .4rem;
+			margin: 0 .1rem;
+			line-height: .4rem;
+			text-align: center;
+			color: #666;
+			background: #fff;
+		}
+
+	</style>
+	<div class="testBtn">
+		<a href="###" onclick="openDia('#fixEditMsg')" class="aTest1">新增弹窗1</a>
+		<a href="###" onclick="openDia('#fixSendZmu')">新增弹窗2</a>
+		<a href="###" onclick="openDia('#fixCreatTm')">新增弹窗3</a>
+	</div>
+
+	<!-- 无用 -->
+	<!-- 邀请队伍 -->
+	<div class="fixMask" style="display:none"></div>
+	<!-- 221219 add -->
+	<div class="fixBottom" id="fixEditMsg">
+		<div class="fixDiaClose"></div>
+		<div class="fixDiaTit">修改信息</div>
+		<div class="fixCapScroll">
+			<div class="fixTxFile">
+				<div class="fileIpt">
+					<div class="fileBox"><img src="https://img.temp.im/120/333/EEE" alt=""><input type="file"></div>
+				</div>
+				<div class="fileTxt"><em class="pcr_red">*</em>上传头像</div>
+			</div>
+			<ul class="fixEdteam mt30">
+				<li>
+					<div class="item">
+						<p><em class="pcr_red">*</em> 队伍名：</p>
+						<input type="text" placeholder="请输入队伍名称">
+					</div>
+					<div class="tip">队伍名称键使用英文（大小写）、中文、数字，最多8个汉字</div>
+				</li>
+				<li>
+					<div class="item">
+						<p>队伍QQ群：</p>
+						<input type="text" placeholder="请输入队伍群号">
+					</div>
+				</li>
+				<li>
+					<div class="item">
+						<p>队长微信号：</p>
+						<input type="text" placeholder="请输入队长的微信号">
+					</div>
+				</li>
+			</ul>
+			<div class="fixEdBtns">
+				<a href="javascript:;" class="btn_blue">确认修改</a>
+			</div>
+		</div>
+	</div>
+	<div class="fixBottom fixSpcBg" id="fixSendZmu">
+		<div class="fixDiaClose"></div>
+		<div class="fixDiaTit">发布招募</div>
+		<div class="fixNewScroll">
+			<ul class="zmMadlist">
+				<li>
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li>
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li>
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li>
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li>
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li class="on">
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li>
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li>
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li>
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li>
+					<div class="img"><img src="https://via.placeholder.com/194/fff/000" alt=""></div>
+				</li>
+				<li class="spc">
+					<div class="img" style="display:none">
+						<div class="clear" onclick="$(this).parent('.img').hide();$(this).parent('.img').siblings('.file').show()">
+						</div>
+						<img src="https://via.placeholder.com/194/fff/000" alt="">
+					</div>
+					<div class="file" onclick="$(this).hide();$(this).siblings('.img').show()">
+						<i></i>
+						<p>上传照片</p>
+						<em>350*350 2M以内</em>
+						<input type="file">
+					</div>
+				</li>
+
+			</ul>
+		</div>
+		<div class="fixCapBtns">
+			<span class="abtn1">分享队伍</span>
+			<span class="abtn2">解散队伍</span>
+		</div>
+	</div>
+
+	<div class="fixBottom" id="fixCreatTm">
+		<div class="fixDiaClose"></div>
+		<div class="fixDiaTit">发布招募</div>
+		<div class="tac mt10 fs24 fixTipErr">本次赛事仅支持团队报名</div>
+		<ul class="creatTmlist">
+			<li class="on"><span class="a1">个人报名</span></li>
+			<li><span class="a2">团队报名</span></li>
+		</ul>
+		<div class="creatWrap">
+			<div class="creatCout">
+				<div class="fs24 crtBox">选择报名比赛的队伍<br>（本次赛事最低参与人数为4人，仅支持队长报名，仅展示符合条件的队伍）</div>
+				<div class="crtScroll">
+					<ul class="fixIvtJoin">
+						<li class="on">
+							<div class="img"><img src="https://img.temp.im/62/333/EEE" alt=""></div>
+							<div class="infos">
+								<div class="name">
+									<strong>fox贾维斯哟</strong>
+									<p>ID:123891723981</p>
+								</div>
+								<div class="user">
+									<p class="nums"><i></i>5人</p>
+									<div class="touxs">
+										<span><img src="https://img.temp.im/62/333/EEE" alt=""></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="img"><img src="https://img.temp.im/62/333/EEE" alt=""></div>
+							<div class="infos">
+								<div class="name">
+									<strong>fox贾维斯哟</strong>
+									<p>ID:123891723981</p>
+								</div>
+								<div class="user">
+									<p class="nums"><i></i>5人</p>
+									<div class="touxs">
+										<span><img src="https://img.temp.im/62/333/EEE" alt=""></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="img"><img src="https://img.temp.im/62/333/EEE" alt=""></div>
+							<div class="infos">
+								<div class="name">
+									<strong>fox贾维斯哟</strong>
+									<p>ID:123891723981</p>
+								</div>
+								<div class="user">
+									<p class="nums"><i></i>5人</p>
+									<div class="touxs">
+										<span><img src="https://img.temp.im/62/333/EEE" alt=""></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="img"><img src="https://img.temp.im/62/333/EEE" alt=""></div>
+							<div class="infos">
+								<div class="name">
+									<strong>fox贾维斯哟</strong>
+									<p>ID:123891723981</p>
+								</div>
+								<div class="user">
+									<p class="nums"><i></i>5人</p>
+									<div class="touxs">
+										<span><img src="https://img.temp.im/62/333/EEE" alt=""></span>
+										<span></span>
+										<span></span>
+										<span></span>
+										<span></span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="creatCout" style="display:none">
+				<div class="noCreat">
+					<i></i>
+					<p>
+						本次赛事参赛队伍最低人数为<em>4</em>人<br>
+						仅支持队长进行报名<br>
+						目前你没有担任队长并符合条件的队伍，<br>
+						可以点击下方按钮创建队伍或联系所在
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="fixCapBtns">
+			<span class="abtn1">分享队伍</span>
+			<span class="abtn2">解散队伍</span>
+		</div>
+	</div>
+
+	<!-- end -->
+	<script type="text/javascript">
+		$(function () {
+			// 导航类别切换 222222
+			function tabInitOth(ids) {
+				var ids_a = ids.split("|");
+				var tab_menu = $("." + ids_a[0]);
+				var tab_list = $("." + ids_a[1]);
+				tab_menu.find("li").each(function (index) {
+					var clickTag = $(this).find(ids_a[3]);
+					clickTag.click(function () {
+						var _index = index;
+						$(this).parent().siblings().removeClass("on");
+						$(this).parent().addClass("on");
+						$(this)
+							.parents("." + ids_a[0])
+							.siblings("." + ids_a[1])
+							.find("." + ids_a[2])
+							.hide()
+							.eq(_index)
+							.show();
+						return false;
+					});
+				});
+			}
+			// 切换
+			tabInitOth("creatTmlist|creatWrap|creatCout|span");
+
+
+
+			$('#testFuc').click(function () {
+				$('body').toggleClass('skin_blue')
+			})
+			$('#testFuc2').click(function () {
+				$('body').toggleClass('skin-ys')
+			})
+		})
+
+	</script>
+</body>
+
+</html>

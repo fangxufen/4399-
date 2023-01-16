@@ -1,0 +1,229 @@
+<!-- waslong 2021.12.17-->
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta content="telephone=no, email=no" name="format-detection" />
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit" />
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true" />
+    <!-- 微软的老式浏览器 -->
+    <meta name="screen-orientation" content="portrait" />
+    <!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait" />
+    <!-- QQ强制竖屏 -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/jquery.js"></script>
+    <title> </title>
+    <script>
+      // 屏幕适配
+      function dw() {
+        var deviceWidth = document.documentElement.clientWidth;
+        if (deviceWidth > 750) deviceWidth = 750;
+        document.documentElement.style.fontSize = deviceWidth / 7.5 + "px";
+      }
+      dw();
+      window.onresize = function () {
+        dw();
+      };
+    </script>
+  </head>
+
+  <body>
+    <div class="mask">
+      <div class="dia">
+        <div>
+          <span class="close"></span>
+          <p class="mt40">确定这条回帖不亮评吗？</p>
+          <div class="btnbox v2">
+            <a href="#" class="btn3 mr20 v3">取消</a>
+            <a href="#" class="btn v3">报名加入亮评鉴定家</a>
+          </div>
+        </div>
+      </div>
+      <!-- 主贴详情 -->
+      <div class="dia">
+        <div>
+          <span class="close"></span>
+          <p class="dt1"></p>
+          <div class="post v2">
+            <p class="title">
+              震惊！外媒披露：Steam百万畅销移植《枪火重生手游》国服或5月25日上线！目前已在欧洲地区发布
+            </p>
+            <div class="user v2 mt20">
+              <img src="./assets/avart.png" class="avart fl" alt="" />
+              <div class="fl info">
+                <p class="name">作者：墨羽不是摸鱼</p>
+                <p class="f22">发布时间：2022-04-07 16:11:08</p>
+              </div>
+              <div class="cf"></div>
+            </div>
+            <p class="mt20">
+              完整展示主楼内容，可在弹窗内往下拉动！过滤默认表情包、游戏插卡。
+            </p>
+            <p class="mt20">
+              <a href="#"
+                ><em class="v2 tdu">这个是帖子里的链接 ，点击可以打开>></em></a
+              >
+            </p>
+            <div class="videobox">
+              <video src="./assets/1.mp4" poster="./assets/img1.jpg"></video>
+              <span class="play"></span>
+            </div>
+
+            <p class="f22 cf lp01">
+              发布时间：2022-04-07 16:11:08
+              <a href="#" class="fr"><em>查看完整内容>></em></a>
+            </p>
+            <div class="line"></div>
+            <p><em>精彩回复</em></p>
+            <p class="f22 cf lp01">
+              发布时间：2022-04-07 16:11:08
+              <a href="#" class="fr"><em>查看本帖已有亮评>></em></a>
+            </p>
+            <p class="des2">
+              <a href="#"><em class="v2">@张艺兴老公</em></a
+              >12139年，我独自打扫着祠堂。老家的祠堂依旧是老样子尽管翻新了无数遍，那一万年前的样式依旧透出一丝古朴，典雅。爷爷说，老家的祠堂叫“宅”，是10000年前的那位祖宗居住一生的地方，那里的每一块瓷砖，每一本漫画，每一个手办，都是有千年历史的古董。沧海桑田，那些老物件终究是没被扔掉，静静放着，好好供着，仿佛老祖先有一天会回到宅，向我们诉说那一件件古董的意义。屋中最珍贵的，便是那书桌正中央摆放着的一台智能手机，那是一千年前的物件，如今早已被淘汰，连最老的老人都忘了该如何使用它，只是隐约知道它曾经统治了一个时代。传说老祖宗弥留之际，抱着手机，难以瞑目，似乎是想要交代什么，只是风烛残年，早已无力，怎么也没能交代下来，只留下这手机，被世代供奉。我独自打扫着祠堂，
+            </p>
+            <img src="./assets/img1.jpg" alt="" />
+            <div class="btnbox">
+              <a class="btn3 mr40">不够亮</a>
+              <a class="btn">亮评</a>
+            </div>
+            <div class="mt40 cf">
+              <a href="#" class="fr"><em class="tdu">跳过本次鉴定</em></a>
+            </div>
+          </div>
+          <div class="shadow"></div>
+        </div>
+      </div>
+      <!-- 温馨提示 -->
+      <div class="dia">
+        <div>
+          <span class="close"></span>
+          <p class="dt2"></p>
+          <p class="ph35 fb mt40 tal">
+            非app打开需要前往好游快爆App才能加入亮评鉴定家，参与亮评共鉴哦！
+          </p>
+          <p class="ph35 f24 mt20 tal">
+            文案文案文案文案文案自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定文案文案文案文案文案自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定文案文案文案文案文案自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定文案文案文案文案文案自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义自定文案文案文案文案文案自定义自定义自定义自定义自定义自定义自定义自定义自定义自定义
+          </p>
+          <div class="btnbox v2">
+            <a href="#" class="btn v2">下载好游快爆APP</a>
+          </div>
+        </div>
+      </div>
+      <!-- 申请条件 -->
+      <div class="dia">
+        <div>
+          <span class="close"></span>
+          <p class="dt3"></p>
+          <p class="ph35 mt40 cf tal">
+            <span class="icon3"></span> 完成快爆基础礼仪考试
+            <a href="#"><em class="v2 fr">去考试>></em></a>
+          </p>
+          <p class="ph35 mt40 cf tal">
+            <span class="icon4"></span> 违规记录≤10条
+            <a href="#"><em class="v2 fr">查看风纪情况>> </em></a>
+          </p>
+          <!-- 1104修改 增加说明 -->
+          <p class="ph35 mt40 cf tal">
+            你已达成申请条件，快点击下方参与考试，完成后就正式成为亮评鉴定家的一员啦！
+          </p>
+          <div class="btnbox v2">
+            <a href="#" class="btn3 mr20">取消</a>
+            <a href="#" class="btn">确定</a>
+          </div>
+        </div>
+      </div>
+      <!-- 恭喜 -->
+      <div class="dia">
+        <div>
+          <span class="close"></span>
+          <p class="dt4"></p>
+          <p class="ph35 mt40">
+            成功通过亮评测试 <br />接下来的日子，跟亮评君一起决定亮评吧
+          </p>
+          <div class="btnbox v2">
+            <a href="#" class="btn v2">前往鉴定</a>
+          </div>
+        </div>
+      </div>
+      <!-- 抱歉 -->
+      <div class="dia">
+        <div>
+          <span class="close"></span>
+          <p class="dt5"></p>
+          <p class="ph35 mt40">
+            你没能通过亮评测试<br />
+            不要气馁，可以多去看看别人的亮评再来尝试！
+          </p>
+          <div class="btnbox v2">
+            <a href="#" class="btn v2">好的</a>
+            <br />
+            <!-- 1104修改 增加【报名加入亮评鉴定家】按钮 -->
+            <a href="#" class="btn v2">【报名加入亮评鉴定家】</a>
+          </div>
+        </div>
+      </div>
+      <!-- 1019修改 -->
+      <!-- 通过和不通过标题 -->
+      <div class="dia">
+        <div>
+          <span class="close"></span>
+          <p class="dt6"></p>
+          <p class="dt7"></p>
+          <p class="ph35 mt40">
+            你没能通过亮评测试<br />
+            不要气馁，可以多去看看别人的亮评再来尝试！
+          </p>
+          <div class="btnbox v2">
+            <a href="#" class="btn v2">好的</a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- 1111 还未达到申请条件 -->   
+      <div class="dia">
+        <div>
+          <span class="close"></span>
+          <p class="dt8"></p> 
+          <p class="ph35 mt40">
+            你没能通过亮评测试<br />
+            不要气馁，可以多去看看别人的亮评再来尝试！
+          </p>
+          <div class="btnbox v2">
+            <a href="#" class="btn v2">好的</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    input
+    <style>
+      /* 这边样式不用copy */
+      .mask {
+        position: relative;
+      }
+
+      .dia {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin-bottom: 0.2rem;
+      }
+    </style>
+  </body>
+  <script></script>
+</html>

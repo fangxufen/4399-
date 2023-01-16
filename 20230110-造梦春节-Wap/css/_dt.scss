@@ -1,0 +1,32 @@
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin scroll($w: 0.06rem, $h: 0.5rem, $bg: #ffdbab, $color: #8c4b48) {
+  &::-webkit-scrollbar {
+    width: $w;
+    height: $h;
+    background: $bg;
+  }
+
+  &::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 0px rgba(240, 240, 240, .5); */
+    border-radius: 0.2rem;
+    background: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0.5rem;
+    /* box-shadow: inset 0 0 0px rgba(237, 44, 37, .5); */
+    background: $color;
+  }
+}
+
+// 描边
+@mixin text-shadow($size: 2px) {
+  text-shadow: #fbd2a6 $size 0 $size,
+    #fbd2a6 0 $size $size, #fbd2a6 -$size 0 $size,
+    #fbd2a6 0 -$size $size;
+}

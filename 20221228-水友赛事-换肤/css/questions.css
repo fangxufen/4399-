@@ -1,0 +1,495 @@
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body,
+nav,
+dl,
+dt,
+dd,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+ol,
+li,
+input,
+button,
+textarea,
+footer {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+	background:#fff;
+  font: 62.5%/1.5 "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+em,
+i {
+  font-style: normal;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+input:focus {
+  outline: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+.cf:after {
+  content: " ";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.cf {
+  min-height: 1%;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+body {
+  background: #f6f6f6;
+}
+.break {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.area {
+  width: 7rem;
+  background: #fff;
+  padding: 0.3rem;
+  overflow: hidden;
+  margin: 0.22rem auto 0;
+  border-radius: 0.1rem;
+  -webkit-box-shadow: 0 0 0.15rem 0 rgba(102, 102, 102, 0.1);
+  box-shadow: 0 0 0.15rem 0 rgba(102, 102, 102, 0.1);
+  box-sizing: border-box;
+}
+.ask {
+  width: 7rem;
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 0.22rem;
+}
+.ask::before {
+  content: "";
+  background: url(../images/questions/img3.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  background-color: transparent;
+  position: absolute;
+  left: -0.25rem;
+  top: 1rem;
+  width: 7.5rem;
+  height: 0.33rem;
+}
+
+.ask .ask-tit {
+  color: #23c268;
+  font-size: 0.34rem;
+  padding: 0.1rem 0 0;
+  text-align: center;
+  line-height: 0.4rem;
+  height: 1.1rem;
+}
+
+.ask .btnApply {
+  margin-top: 0.3rem;
+}
+
+.ask-list li {
+  margin-top: 0.5rem;
+  position: relative;
+  overflow: visible;
+}
+
+.ask-list li:first-child {
+  margin-top: 0;
+}
+
+.ask-list li.no-required .sm-tit {
+  padding-left: 0;
+}
+
+.ask-list li.no-required .sm-tit::before {
+  display: none;
+}
+
+.ask-list .sm-tit {
+  color: #333;
+  font-size: 0.3rem;
+  line-height: 0.4rem;
+  padding-left: 0.2rem;
+  position: relative;
+}
+
+.ask-list .sm-tit::before {
+  content: "*";
+  color: #ff0000;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.ask-list p {
+  color: #999;
+  font-size: 0.24rem;
+  padding-top: 0.05rem;
+}
+
+.ask-list p a {
+  color: #5e5eff;
+  text-decoration: underline;
+}
+
+.ask-list .ask-txt {
+  width: 100%;
+  padding: 0 0.2rem;
+  -webkit-box-sizing: border-box;
+  height: 0.7rem;
+  background: #efefef;
+  border-radius: 0.05rem;
+  border: none;
+  font-size: 0.24rem;
+  display: block;
+  margin-top: 0.2rem;
+}
+
+.ask-list textarea {
+  width: 100%;
+  padding: 0.1rem 0.2rem;
+  -webkit-box-sizing: border-box;
+	border:1px solid #bfbfbf;
+  /* -webkit-box-shadow: #bfbfbf 0 0 0 1px inset;
+  box-shadow: #bfbfbf 0 0 0 1px inset; */
+  /* border: none; */
+  background: none;
+  border-radius: 0.05rem;
+  font-size: 0.26rem;
+  line-height: 0.34rem;
+  height: 1.62rem;
+  margin-top: 0.2rem;
+  display: block;
+}
+
+.ask-list .check-box {
+  background: #f5f4f4;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.05rem;
+  margin-top: 0.2rem;
+}
+
+.ask-list .check-box .multi {
+  padding: 0.1rem 0;
+  position: relative;
+  color: #333;
+  font-size: 0.26rem;
+  line-height: 0.4rem;
+  z-index: 0;
+}
+
+.ask-list .check-box .multi label {
+  padding-left: 0.5rem;
+  display: block;
+}
+
+.ask-list .check-box .multi input.c-box {
+  position: absolute;
+  left: 0;
+  top: 0rem;
+  width: 0.4rem;
+  height: 100%;
+  display: block;
+  z-index: -1;
+  opacity: 0;
+}
+
+.ask-list .check-box .multi input.c-box + span {
+  background: #fff;
+  width: 0.3rem;
+  height: 0.3rem;
+  display: block;
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  margin-top: -0.17rem;
+  -webkit-box-shadow: #bfbfbf 0 0 0 1px;
+  box-shadow: #bfbfbf 0 0 0 1px;
+  z-index: -1;
+}
+
+.ask-list .check-box .multi input.c-box:checked + span:after {
+  content: " ";
+  background: url(../images/questions/true.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  background-color: transparent;
+  width: 0.28rem;
+  height: 0.22rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.11rem 0 0 -0.14rem;
+  overflow: hidden;
+}
+
+.ask-list .regard {
+  position: absolute;
+  left: 1.2rem;
+  top: 0.1rem;
+  width: 4.3rem;
+  height: 0.4rem;
+  padding: 0 0.2rem;
+  -webkit-box-shadow: #e2e2e2 0 0 0 1px;
+  box-shadow: #e2e2e2 0 0 0 1px;
+  border: none;
+  border-radius: 0;
+  color: #333;
+  z-index: -1;
+  font-size: 0.22rem;
+}
+
+.ask-list .radio-box {
+  background: #f5f4f4;
+  padding: 0.2rem 0.3rem;
+  border-radius: 0.05rem;
+  margin-top: 0.2rem;
+}
+
+.ask-list .regular-radio {
+  padding: 0.1rem 0;
+  position: relative;
+  color: #333;
+  font-size: 0.26rem;
+  line-height: 0.4rem;
+  z-index: 0;
+}
+
+.ask-list .regular-radio label {
+  padding-left: 0.5rem;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+.ask-list .regular-radio .r-input {
+  display: none;
+}
+
+.ask-list .regular-radio .r-input + span {
+  -webkit-appearance: none;
+  background-color: #fff;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 100%;
+  display: inline-block;
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  margin-top: -0.17rem;
+  -webkit-box-shadow: #bfbfbf 0 0 0 1px;
+  box-shadow: #bfbfbf 0 0 0 1px;
+}
+
+.ask-list .regular-radio .r-input:checked + span:after {
+  content: " ";
+  background: url(../images/questions/true.png) no-repeat 0 0;
+  background-size: 100% 100%;
+  background-color: transparent;
+  width: 0.28rem;
+  height: 0.22rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -0.11rem 0 0 -0.14rem;
+  overflow: hidden;
+}
+
+.ask-list .regular-radio .r-input:checked + span {
+  background-color: #fff;
+}
+
+.success {
+  display: none;
+  margin: 0;
+  padding: 2rem 0;
+}
+
+.success p {
+  display: block;
+  /* background: url(../images/questions/img4.png) no-repeat center 0; */
+  background-size: 0.95rem auto;
+  background-color: transparent;
+  color: #23c268;
+  font-size: 0.3rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+
+.btnApply {
+  display: block;
+  width: 3.46rem;
+  height: 0.74rem;
+  background: #23c268;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  line-height: 0.76rem;
+  font-size: 0.3rem;
+  border-radius: 0.37rem;
+  margin: 0.2rem auto 0;
+  text-decoration: none;
+}
+
+
+.fileList {
+  display: flex;
+  flex-flow: row wrap;
+}
+.fileList li {
+  width: 1.46rem;
+  margin-left: 0.18rem;
+  margin-top: 0.2rem;
+  overflow: visible;
+}
+.fileList li:nth-child(4n+1) {
+  margin-left: 0rem;
+  margin-top: 0.2rem;
+}
+.fileList .fileBox {
+  width: 1.46rem;
+  height: 1.46rem;
+  border: 1px dashed #ccc;
+  border-radius: 0.05rem;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+.fileList .fileBox input {
+  width: 9.99rem;
+  height: 9.99rem;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -4.995rem;
+  top: 50%;
+  margin-top: -4.995rem;
+  z-index: 4;
+}
+.fileList .fileBox i {
+  background: url("../images/questions/questionIconFile.png") no-repeat;
+  background-size: 100% 100%;
+  width: 0.51rem;
+  height: 0.41rem;
+  margin: 0.3rem auto 0rem;
+  display: block;
+}
+.fileList .fileBox p {
+  margin-top: 0.05rem;
+}
+.fileList .fileBox p,
+.fileList .fileBox em {
+  height: 0.22rem;
+  line-height: 0.22rem;
+  color: #949494;
+  font-size: 0.16rem;
+  display: block;
+  text-align: center;
+  overflow: hidden;
+}
+.fileList .fileRes {
+  width: 1.46rem;
+  position: relative;
+}
+.fileList .fileRes img {
+  width: 1.46rem;
+  height: 1.46rem;
+  border-radius: 0.05rem;
+	object-fit:cover;
+  overflow: hidden;
+}
+.fileList .fileRes .clear {
+  background: url("../images/questions/questionIconClear.png") no-repeat;
+  background-size: 100% 100%;
+  width: 0.26rem;
+  height: 0.26rem;
+  position: absolute;
+  top: -0.12rem;
+  right: -0.12rem;
+  z-index: 3;
+}
+.fileList .fileRes p {
+  height: 0.28rem;
+  line-height: 0.28rem;
+  margin: 0.07rem auto 0rem;
+  color: #46c67e;
+  font-size: 0.24rem;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ask-list .regular-radio .r-input:checked{
+	background:#000;
+	display:block
+}

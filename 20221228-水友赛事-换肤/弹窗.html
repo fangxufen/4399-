@@ -1,0 +1,237 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>弹窗</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="format-detection" content="telephone=no">
+	<meta content="false" id="twcClient" name="twcClient" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/skin.css">
+	<link rel="stylesheet" type="text/css" href="css/skinys.css">
+	<script type="text/javascript" src="js/FontSize.js"></script>
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/swiper.min.js"></script>
+	<script type="text/javascript" src="js/HanZo.js"></script>
+
+</head>
+
+<body style="background:#000" class="skin_blue">
+
+	<!-- 无用按钮 -->
+	<div id="testFuc"
+		style="background:#000;width:1rem;height:1rem;line-height:1rem;text-align:center;color:#fff;position:fixed;left:50%;margin-left: 2.75rem;top:.4rem;border-radius:9999rem;z-index:10000">
+		换肤</div>
+	<!-- end -->
+	<div id="testFuc2"
+		style="background:#000;width:1rem;height:1rem;line-height:1rem;text-align:center;color:#fff;position:fixed;left:50%;margin-left: 2.75rem;top:1.5rem;border-radius:9999rem;z-index:10000">
+		换肤2</div>
+
+	<br><br><br>
+
+	<div class="pop">
+		<i class="iconDing"></i>
+		<span class="ppclose"></span>
+		<div class="ppcont">
+			<div class="pptitle mt0">提示</div>
+			<div class="mt20">
+				你已订阅成功！好游快爆水友赛会不定期开展后续赛事招募、直播等信息会第一时间通知大家前来参与哦！
+			</div>
+			<div class="ppbtns">
+				<a href="###" class="abtn3"><i></i>前往爆米花商店</a>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<div class="pop">
+		<i class="iconDing"></i>
+		<span class="ppclose"></span>
+		<div class="ppcont">
+			<div class="pptitle mt0">取消订阅</div>
+			<div class="mt20">
+				通用弹窗通用弹窗通用弹窗通用弹窗通用弹窗通用弹窗通用弹窗通用弹窗通用弹窗通用弹窗
+			</div>
+			<div class="ppbtns">
+				<a href="###" class="abtn1">按钮文案1</a>
+				<a href="###" class="abtn2">按钮文案2</a>
+			</div>
+		</div>
+	</div>
+
+	<br><br><br>
+
+	<div class="pop">
+		<div class="ppJiaruIcon"><img src="https://img.temp.im/115/333/EEE" alt=""></div>
+		<span class="ppclose"></span>
+		<div class="ppcont">
+			<div class="pptitle mt0">发布招募</div>
+			<div class="ppJiaru mt20">
+				<dl>
+					<dt>
+						<div class="jrteam">
+							<p>FPX</p>
+							<span>ID:100868978</span>
+						</div>
+					</dt>
+					<dd class="jiaruText">
+						<textarea placeholder="填写个人简介，方便战队管理人员了解你的实力和情况，更易通过申请哦~（选填)"></textarea>
+						<em>
+							<i>0</i>/50
+						</em>
+					</dd>
+				</dl>
+				<a href="javascript:;" class="ppTjsq mt40">提交申请</a>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+
+	<div class="pop">
+		<div class="ppJiaruIcon"><img src="https://img.temp.im/115/333/EEE" alt=""></div>
+		<span class="ppclose"></span>
+		<div class="ppcont">
+			<div class="pptitle mt0">申请加入队伍</div>
+			<div class="ppJiaru mt20">
+				<dl>
+					<dt>FPX</dt>
+					<dd class="jiaruText">
+						<textarea placeholder="填写个人简介，方便战队管理人员了解你的实力和情况，更易通过申请哦~（选填)"></textarea>
+						<em>
+							<i>0</i>/50
+						</em>
+					</dd>
+				</dl>
+				<a href="javascript:;" class="ppTjsq mt40">提交申请</a>
+			</div>
+		</div>
+	</div>
+
+	<br><br>
+	<!-- 无用 -->
+	<div class="m" style="color:#fff" onclick="openDia('#fixPublish')">底部弹窗内容</div>
+	<!-- end -->
+
+	<!-- 邀请队伍 -->
+	<div class="fixMask" style="display:none"></div>
+	<div class="fixBottom " id="fixPublish">
+		<div class="fixDiaClose"></div>
+		<div class="fixDiaTit">发布招募</div>
+		<div class="fixTipErr mt40">选择需要招募队友的队伍</div>
+		<div class="fixOthScroll mt20">
+			<ul class="fixIvtJoin">
+				<li>
+					<div class="img"><img src="https://img.temp.im/62/333/EEE" alt=""></div>
+					<div class="infos">
+						<div class="name">
+							<strong>fox贾维斯哟fox贾维斯哟fox贾维斯哟fox贾维斯哟fox贾维斯哟fox贾维斯哟fox贾维斯哟fox贾维斯哟fox贾维斯哟fox贾维斯哟fox贾维斯哟fox贾维斯哟</strong>
+							<p>ID:123891723981</p>
+						</div>
+						<div class="user">
+							<p class="nums"><i></i>5人</p>
+							<div class="touxs">
+								<span><img src="https://img.temp.im/62/333/EEE" alt=""></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="https://img.temp.im/62/333/EEE" alt=""></div>
+					<div class="infos">
+						<div class="name">
+							<strong>fox贾维斯哟</strong>
+							<p>ID:123891723981</p>
+						</div>
+						<div class="user">
+							<p class="nums"><i></i>5人</p>
+							<div class="touxs">
+								<span><img src="https://img.temp.im/62/333/EEE" alt=""></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="https://img.temp.im/62/333/EEE" alt=""></div>
+					<div class="infos">
+						<div class="name">
+							<strong>fox贾维斯哟</strong>
+							<p>ID:123891723981</p>
+						</div>
+						<div class="user">
+							<p class="nums"><i></i>5人</p>
+							<div class="touxs">
+								<span><img src="https://img.temp.im/62/333/EEE" alt=""></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="https://img.temp.im/62/333/EEE" alt=""></div>
+					<div class="infos">
+						<div class="name">
+							<strong>fox贾维斯哟</strong>
+							<p>ID:123891723981</p>
+						</div>
+						<div class="user">
+							<p class="nums"><i></i>5人</p>
+							<div class="touxs">
+								<span><img src="https://img.temp.im/62/333/EEE" alt=""></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="img"><img src="https://img.temp.im/62/333/EEE" alt=""></div>
+					<div class="infos">
+						<div class="name">
+							<strong>fox贾维斯哟</strong>
+							<p>ID:123891723981</p>
+						</div>
+						<div class="user">
+							<p class="nums"><i></i>5人</p>
+							<div class="touxs">
+								<span><img src="https://img.temp.im/62/333/EEE" alt=""></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="mt30"><!-- 占位符--></div>
+	</div>
+	<script type="text/javascript">
+		$('#testFuc').click(function () {
+			$('body').toggleClass('skin_blue')
+		})
+		$('#testFuc2').click(function () {
+			$('body').toggleClass('skin-ys')
+		})
+	</script>
+</body>
+
+</html>

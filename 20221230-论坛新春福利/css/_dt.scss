@@ -1,0 +1,5 @@
+@mixin text-shadow($num: 2px) {
+  text-shadow: #fbd2a6 2px 0 2px,
+    #fbd2a6 0 2px 2px, #fbd2a6 -2px 0 2px,
+    #fbd2a6 0 -2px 2px;
+}

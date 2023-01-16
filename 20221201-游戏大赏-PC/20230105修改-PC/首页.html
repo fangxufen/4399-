@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>游戏大赏</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta content="false" id="twcClient" name="twcClient" />
+  <link rel="stylesheet" href="css/video-js.css" type="text/css">
+  <link rel="stylesheet" type="text/css"
+    href="//res.3839pic.com/kuaibao/n/hykb/2021dsvote/skin/pc/css/index_e2.css?v_v45">
+  <link rel="stylesheet" href="//res.3839pic.com/kuaibao/n/hykb/2021dsvote/skin/header/css/logiframe_base.css"
+    type="text/css">
+  <link rel="stylesheet" href="css/reset.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+
+<body>
+
+  <div class="box">
+    <div class="page" style="z-index:30">
+      <script type="text/javascript">
+        $(function () {
+          uloginProp = {};
+          uloginProp.divId = "bannerU";
+          uloginProp.appId = "web";
+          uloginProp.layout = "horizontal"; //横向为"horizontal", 纵向为"vertical"
+          // uloginProp.layoutSelfAdapting = "false"; //可以不设置，缺省为"true"
+          uloginProp.displayMode = "popup"; //嵌入式为embed，弹出式为"popup"
+          uloginProp.externalLogin = 'qq';
+          uloginProp.postLoginHandler = "refreshParent"; //可以不设置，缺省值为"default"，登录完后直接用js修改登录div中的信息，不刷新页面；刷新父页面为"refreshParent"； 如果为"redirect"，需要设置redirectUrl属性
+          // user_login_domain = "//t.3839.com";//测试
+          // user_login_domain = "//www.3839.com" + unionLoginProps.__loginDomain;//正式
+          UniLogin.setUnionLoginProps(uloginProp);
+        })
+      </script>
+      <div class="header" id="top">
+        <div>
+          <a href="//www.3839.com/">
+            <img class="logo" src="https://img.71acg.net/kbyx~sykb/20201028/14304299931" alt="好游快爆">
+          </a>
+          <a class="download-app" href="//www.3839.com/app.html">
+            <em class="all-icon phone-app">好游快爆下载</em>APP下载
+          </a>
+          <div class="nav">
+            <a href="//www.3839.com/" target="_self">首页</a>
+            <a href="//www.3839.com/top/hot.html" target="_self">排行榜</a>
+            <a href="//www.3839.com/xinqi.html" target="_self">新奇</a>
+            <a href="//www.3839.com/anli/" target="_self">安利墙</a>
+            <a target="_self" href="//bbs.3839.com/">论坛</a>
+          </div>
+          <div class="input-box">
+            <form id="serach_form" method="post" action="https://www.3839.com/search.php">
+              <input id="key" type="text" name="word" autocomplete="off">
+              <em class="search all-icon" onclick="searchm()"></em>
+            </form>
+            <div class="sch-res" style="display:none">
+              <div class="hd">热门搜索</div>
+              <ul>
+                <li><a href="//www.3839.com/search.php?word=永劫无间手游">永劫无间手游</a></li>
+                <li><a href="//www.3839.com/search.php?word=猛鬼宿舍">猛鬼宿舍</a></li>
+                <li><a href="//www.3839.com/search.php?word=原神">原神</a></li>
+                <li><a href="//www.3839.com/search.php?word=跳跃之王">跳跃之王</a></li>
+                <li><a href="//www.3839.com/search.php?word=武士零">武士零</a></li>
+                <li><a href="//www.3839.com/search.php?word=避难所:生存">避难所:生存</a></li>
+                <li><a href="//www.3839.com/search.php?word=怪物火车">怪物火车</a></li>
+                <li><a href="//www.3839.com/search.php?word=光遇">光遇</a></li>
+                <li><a href="//www.3839.com/search.php?word=寅春爆爆庙会">寅春爆爆庙会</a></li>
+                <li><a href="//www.3839.com/search.php?word=好游快爆年度游戏大赏">好游快爆年度游戏大赏</a></li>
+                <li><a href="//www.3839.com/search.php?word=暗区突围">暗区突围</a></li>
+                <li><a href="//www.3839.com/search.php?word=原神地图资源查询器">原神地图资源查询器</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tbmsg">
+            <div class="msgtip">
+              <span id="msg_total_num" style="display:none;">0</span>
+            </div>
+            <div class="msgpop">
+              <div class="inner">
+                <span class="itarrow"></span>
+                <ul class="msgtab cf">
+                  <li class="on" rel="1">
+                    <span>回复</span>
+                    <i id="msg_topic_num" style="display: none;">0</i>
+                  </li>
+                  <li rel="4">
+                    <span>表态</span>
+                    <i id="msg_vote_num" style="display: none;">0</i>
+                  </li>
+                  <li rel="3">
+                    <span>@</span>
+                    <i id="msg_at_num" style="display: none;">0</i>
+                  </li>
+                </ul>
+                <div class="msgcon">
+                  <ul class="msglist hlist"></ul>
+                  <div class="msgmore">
+                    <a href="https://www.3839.com/my.php?type=1" id="mbtn">查看全部
+                      <em class="all-icon arrow"></em></a>
+                  </div>
+                  <p class="nodata msgno">暂无消息</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="user" id="bannerU" style="visibility:visible;">
+            <div class="login_horizon unilogin_box"><a id="login_4399user"
+                href="javascript:UniLogin.showPopupLogin('','',true)" target="_self"><img
+                  src="//f1.3839img.com/sykb~sykb/20180811/15520513776" width="30" height="30"></a></div>
+          </div>
+        </div>
+      </div>
+      <script language="javascript">
+        function searchm() {
+          $("#serach_form").submit();;
+        }
+        $("#key").focus(function () {
+          $(".sch-res").show();
+        });
+        $(".input-box").hover(function () { }, function () {
+          $(".sch-res").hide();
+        });
+      </script>
+      <script language="javascript">
+        var msg_total_num = 0;
+        var msg_topic_num = 0;
+        var msg_vote_num = 0;
+        var msg_at_num = 0;
+        var uid = UniLogin.getUid();
+        //ajax请求获取消息数量
+        $.ajax({
+          url: "https://bbs.3839.com/my.php",
+          //url:"http://t.forum.3839.com/my.php",
+          data: {
+            ac: "ajax_msg_num"
+          },
+          type: "post",
+          dataType: "jsonp",
+          jsonp: "callback",
+          async: false,
+          xhrFields: {
+            withCredentials: true
+          },
+          crossDomain: true,
+          success: function (msg) {
+            if (msg.key == 'suc') {
+              msg_total_num = msg.msg_total_num;
+              msg_topic_num = msg.msg_topic_num;
+              msg_vote_num = msg.msg_vote_num;
+              msg_at_num = msg.msg_at_num;
+              init_msg_num();
+            }
+          }
+        });
+        var can_jump = 0;
+        var check_code9 = 100;
+        var check_msg9 = '';
+        var stop1 = 0;
+        if (uid > 0) {
+          $(".tbmsg").hover(function () {
+            if (stop1 == 1) {
+              return false;
+            }
+            stop1 = 1;
+            $(".msgtab li").attr("class", "");
+            $(".msgtab li").eq(0).attr("class", "on");
+            $(".msgpop").show();
+            get_msg(1);
+          },
+            function () {
+              stop1 = 0;
+              $(".msgpop").hide();
+            });
+          $(".msgtab li").click(function () {
+            var nz = $(this).attr("rel");
+            $(".msgtab li").attr("class", "");
+            $(this).attr("class", "on");
+            get_msg(nz);
+            return false;
+          });
+        }
+        //ajax加载消息
+        function get_msg(type) {
+          //加载信息前
+          $(".msgno").html('消息加载中......');
+          $(".msgno").show();
+          $(".hlist").hide();
+          $(".msgmore").hide();
+          $.ajax({
+            url: "https://bbs.3839.com/my.php",
+            //url:"http://t.forum.3839.com/my.php",
+            data: {
+              ac: "ajax",
+              type: type,
+              hflag: 2
+            },
+            type: "post",
+            dataType: "jsonp",
+            jsonp: "callback",
+            async: false,
+            xhrFields: {
+              withCredentials: true
+            },
+            crossDomain: true,
+            success: function (msg) {
+              check_code9 = msg.check_code;
+              can_jump = 1;
+              if (msg.check_code != 100) {
+                check_msg9 = msg.check_msg;
+                $(".msgno").html(msg.check_msg);
+                $(".msgno").show();
+                $(".hlist").hide();
+                $(".msgmore").hide();
+              } else {
+                if (msg.key == 'suc' && msg.result != '') {
+                  $(".hlist").html(msg.result);
+                  var mlink = 'https://bbs.3839.com/my.php?type=' + type;
+                  //var mlink='http://t.forum.3839.com/my.php?type='+type;
+                  $("#mbtn").attr("href", mlink);
+                  $(".hlist").show();
+                  $(".msgmore").show();
+                  $(".msgno").hide();
+                } else {
+                  $(".msgno").html('暂无消息');
+                  $(".msgno").show();
+                  $(".hlist").hide();
+                  $(".msgmore").hide();
+                }
+              }
+              if (type == 1) {
+                msg_total_num = msg_total_num - msg_topic_num;
+                msg_topic_num = 0;
+              }
+              if (type == 4) {
+                msg_total_num = msg_total_num - msg_vote_num;
+                msg_vote_num = 0;
+              }
+              if (type == 3) {
+                msg_total_num = msg_total_num - msg_at_num;
+                msg_at_num = 0;
+              }
+              init_msg_num();
+            }
+          });
+        }
+        //处理消息数量展示
+        function init_msg_num() {
+          if (msg_total_num >= 100) {
+            msg_total_num1 = '99+';
+          } else {
+            msg_total_num1 = msg_total_num;
+          }
+          if (msg_topic_num >= 100) {
+            msg_topic_num1 = '99+';
+          } else {
+            msg_topic_num1 = msg_topic_num;
+          }
+          if (msg_vote_num >= 100) {
+            msg_vote_num1 = '99+';
+          } else {
+            msg_vote_num1 = msg_vote_num;
+          }
+          if (msg_at_num >= 100) {
+            msg_at_num1 = '99+';
+          } else {
+            msg_at_num1 = msg_at_num;
+          }
+          $("#msg_total_num").html(msg_total_num1);
+          $("#msg_topic_num").html(msg_topic_num1);
+          $("#msg_vote_num").html(msg_vote_num1);
+          $("#msg_at_num").html(msg_at_num1);
+          if (msg_total_num > 0) {
+            $("#msg_total_num").show();
+          } else {
+            $("#msg_total_num").hide();
+          }
+          if (msg_topic_num > 0) {
+            $("#msg_topic_num").show();
+          } else {
+            $("#msg_topic_num").hide();
+          }
+          if (msg_vote_num > 0) {
+            $("#msg_vote_num").show();
+          } else {
+            $("#msg_vote_num").hide();
+          }
+          if (msg_at_num > 0) {
+            $("#msg_at_num").show();
+          } else {
+            $("#msg_at_num").hide();
+          }
+        }
+        $(".msgtip").click(function () {
+          if (uid == 0 || uid == undefined) {
+            // UniLogin.logout();
+            UniLogin.showPopupLogin('', '', true);
+            return false;
+          }
+          if (can_jump == 1) {
+            if (check_code9 == 100) {
+              window.open('https://bbs.3839.com/my.php?type=1');
+              // window.open('http://t.forum.3839.com/my.php?type=1');
+            } else {
+              alert(check_msg9);
+              UniLogin.logout();
+            }
+          }
+          return false;
+        });
+      </script>
+    </div>
+    <!-- 头部 -->
+    <div class="b b1">
+      <div class="m m1"></div>
+    </div>
+    <div class="b b2">
+      <div class="m m2"></div>
+    </div>
+    <div class="b b3">
+      <div class="m m3"></div>
+    </div>
+    <!-- 第一个框 -->
+    <div class="make">
+      <div class="make-title">
+        <div class="make-title-box">
+          <img class="make-tip" src="images/iocn-tip.png" alt="">
+          <a class="make-line"></a>
+          <img class="make-title1" src="images/title1.png" alt="">
+          <p>2022.12.23-2022.12.30</p>
+        </div>
+        <div class="make-title-box">
+          <img class="make-title1" src="images/title2.png" alt="">
+          <a class="make-line"></a>
+          <p>2022.12.23-2022.12.30</p>
+        </div class="make-title-box">
+        <div class="make-title-box">
+          <img class="make-title1" src="images/title3.png" alt="">
+          <p>2022.12.23</p>
+          <a href="###" class="make-btn">立即预约</a>
+        </div>
+      </div>
+      <div class="make-text">
+        <p>今年快爆年度游戏大赏新增提名征集环节，
+          爆友们可以根据规则提名自己心仪的游戏，
+          助它们入围投票名单。在投票/竞猜环节中，
+          所有玩家均可参与结果竞猜，
+          同时快爆菁英玩家或以上还s直接参与年度大赏投票（<a href="###">如何成为快爆菁英用户？</a>）。</p>
+      </div>
+      <div class="make-video">
+        <div class="make-video-box">
+          <video id="example_video_1" class="video-js" controls preload="none" poster="images/videobg.jpg"
+            data-setup="{}" x5-video-player-type="h5-page">
+            <source src="http://v.yxhhdl.com/video/kuaibao/youpai/1474762_1598009367.mp4" type='video/mp4' />
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- 第二 -->
+    <div class="option">
+      <div class="option-box">
+        <p class="option-title">提名奖项一览</p>
+        <p class="option-title-tpis">已有 <a>101845</a> 位爆友参与投票/竞猜</p>
+        <p class="option-text">在投票/竞猜环节中，所有玩家均可参与结果竞猜，
+          同时快爆菁英玩家或以上还可直接参与年度。大赏投票所有玩家均可参与结果竞猜，
+          所有玩家均可参与结果竞猜，（<a href="###">如何成为快爆菁英用户？</a>）</p>
+        <div class="option-item-box">
+          <div class="option-title-item1">
+            <p class="item-text1">年度最佳游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+          <div class="option-title-item1">
+            <p class="item-text1">最佳二次元游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+          <div class="option-title-item1">
+            <p class="item-text1">玩家最喜爱游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+          <div class="option-title-item1">
+            <p class="item-text1">最佳独立游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+          <div class="option-title-item1">
+            <p class="item-text1">最佳剧情游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+          <div class="option-title-item1">
+            <p class="item-text1">最佳创意游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+          <div class="option-title-item2">
+            <p class="item-text1">玩家最喜爱个人开发游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+          <div class="option-title-item2">
+            <p class="item-text1">玩家最喜爱持续运营游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+          <div class="option-title-item2">
+            <p class="item-text1">最值得玩家期待游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+          <div class="option-title-item2">
+            <p class="item-text1">最值得玩家期待独立游戏</p>
+            <p class="item-text2">好游快爆2021年度游戏大赏</p>
+          </div>
+        </div>
+        <a class="option-btn" href="###">
+          前往好游快爆APP参与投票和竞猜
+          <div class="framebt1">
+            <p>在安卓最新版好游快爆APP搜索<span>“年度游戏大赏”</span>或扫描下方二维码即可参与</p>
+            <img src="https://img.71acg.net/kbyx~sykb/20201027/19563822837" alt="">
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="vote">
+      <div class="vote-box">
+        <p class="vote-title">提名奖项一览</p>
+        <p class="vote-title-tpis">已有 <a>101845</a> 位爆友参与投票/竞猜</p>
+        <p class="vote-text">在投票/竞猜环节中，所有玩家均可参与结果竞猜，
+          同时快爆菁英玩家或以上还可直接参与年度。大赏投票所有玩家均可参与结果竞猜，
+          所有玩家均可参与结果竞猜，（<a href="###">如何成为快爆菁英用户？</a>）</p>
+        <div class="vote-conten">
+          <div class="vote-nav">
+            <a class="vote-nav1 vote-nav2" href="###">参与投票</a>
+            <a class="vote-nav1" href="###">参与竞猜</a>
+          </div>
+          <div class="vote-con-box">
+            <div class="vote-con-nav">
+              <p class="vote-con-title">竞猜规则1111</p>
+              <div class="vote-con-text">
+                <!-- 20230105 修改 -->
+                <p class="vote-con-text1">
+                  ①&nbsp;<a class="outline" class="###">入围游戏评选范围</a>入围游戏评选范围:
+                  2022年1月-12月在国内上线的手游.
+                  (预约游戏不受该范围限制)。
+                  <br>
+                  ②&nbsp;爆友们可参与评委投票奖项的竞猜，每人每个奖项均有1次竞猜机会，竞猜情况不代表最终获奖结果。
+                  <br>
+                  ③&nbsp;完成心仪游戏的竞猜后，爆友们可以点击右下角【分享】按钮，向好友分享自己的快爆年度游戏大赏
+                  专属竞猜海报，邀请他们一起来竞猜游戏评选结果~
+                </p>
+                <!-- 20230105 修改 -->
+              </div>
+
+            </div>
+            <div class="vote-con-nav vote-con-nav-unshow">
+              <p class="vote-con-title">竞猜规则2222</p>
+              <div class="vote-con-text">
+                <p class="vote-con-text1">①</p>
+                <p class="vote-con-text2">入围游戏评选范围: 2022年1月-12月在国内上线的手游.
+                  (预约游戏不受该范围限制)。</p>
+              </div>
+              <div class="vote-con-text">
+                <p class="vote-con-text1">②</p>
+                <p class="vote-con-text2">爆友们可参与评委投票奖项的竞猜，每人每个奖项均有1次竞猜机会，竞猜情况不代表最终获奖结果。</p>
+              </div>
+              <div class="vote-con-text">
+                <p class="vote-con-text1">③</p>
+                <p class="vote-con-text2">完成心仪游戏的竞猜后，爆友们可以点击右下角【分享】按钮，向好友分享自己的快爆年度游戏大赏
+                  专属竞猜海报，邀请他们一起来竞猜游戏评选结果~</p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <a class="vote-btn" href="###">前往好游快爆APP参与投票和竞猜
+          <div class="framebt2">
+            <p>在安卓最新版好游快爆APP搜索<span>“年度游戏大赏”</span>或扫描下方二维码即可参与</p>
+            <img src="https://img.71acg.net/kbyx~sykb/20201027/19563822837" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="game">
+      <div class="game-box">
+        <p class="game-title">玩家最喜爱游戏</p>
+        <p class="game-text">在投票/竞猜环节中，所有玩家均可参与结果竞猜，
+          同时快爆菁英玩家或以上还可直接参与年度。大赏投票所有玩家均可参与结果竞猜，
+          所有玩家均可参与结果竞猜，（<a href="###">如何成为快爆菁英用户？</a>）
+        </p>
+        <div class="game-content">
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学啊实打实的撒啊大多数</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="game-con-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+        </div>
+        <a class="game-btn" href="###">前往好游快爆APP参与投票和竞猜
+          <div class="framebt3">
+            <p>在安卓最新版好游快爆APP搜索<span>“年度游戏大赏”</span>或扫描下方二维码即可参与</p>
+            <img src="https://img.71acg.net/kbyx~sykb/20201027/19563822837" alt="">
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="best">
+      <div class="best-box">
+        <p class="best-title">玩家最喜爱游戏</p>
+        <div class="best-head-box">
+          <div class="best-head">
+            <img src="images/icon-head1.png" alt="">
+            <div class="best-head-conter">
+              <p class="head-title">创造与魔法45646541</p>
+              <a href="###" class="head-icon">闯关</a>
+              <a href="###" class="head-icon">剧情</a>
+              <a href="###" class="head-icon">二次元</a>
+              <a href="###" class="head-icon">角色扮演</a>
+            </div>
+            <div class="best-head-right">
+              <p class="head-fraction">8.6</p>
+              <p class="head-num">15146人<a>评分</a></p>
+            </div>
+          </div>
+          <div class="best-video">
+            <video id="example_video_2" class="video-js" controls preload="none" poster="images/best-video.png"
+              data-setup="{}" x5-video-player-type="h5-page">
+              <source src="http://v.yxhhdl.com/video/kuaibao/youpai/1474762_1598009367.mp4" type='video/mp4' />
+            </video>
+          </div>
+          <div class="best-title-sm">
+            <img src="images/best-new.png" alt="">
+            <p class="sm-head">游戏点评</p>
+            <span>我也想评价＞</span>
+          </div>
+          <div class="best-text">
+            <p class="best-text-p1">起因不明并四处肆虐的天灾，席卷过的土地上出现了大量的神秘矿物——被人们称为“源石”。虽然源石的发现历史已久，
+              但是依赖于技术的进步，其蕴含的能量使得文明顺利迈入现代，但与此同时，源石本身也催生出“感染者”的存在</p>
+            <p class="best-text-p2">《比特小队》制作人：罗未名</p>
+          </div>
+        </div>
+
+        <div class="best-title-sm">
+          <img src="images/best-ward.png" alt="">
+          <p class="sm-head">奖项入围游戏</p>
+        </div>
+
+        <div class="best-img">
+          <a href="###" class="best-img-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="best-img-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学撒打</p>
+          </a>
+          <a href="###" class="best-img-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="best-img-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="best-img-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+          <a href="###" class="best-img-item">
+            <img src="images/icon-head1.png" alt="">
+            <p>创造与魔法学</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="about-box">
+        <p class="about-title">关于大赏</p>
+        <p class="about-text1">本次大赏由快爆玩家和专业玩家共同评选最佳游戏！</p>
+        <p class="about-text1">综合游戏品质、游戏在市场及好游快爆中的表现，筛选2019年好玩、
+          玩家喜欢的高质量游戏形成入围榜单。快爆邀请20名专业玩家和快爆玩家共同进行投票，
+          最佳游戏将综合快爆玩家和专业玩家的票数进行综合评估得出！</p>
+        <a class="about-btn">
+          查看更多
+        </a>
+      </div>
+    </div>
+    <div class="judge">
+      <div class="judge-box">
+        <p class="judge-title">评委阵容</p>
+        <p class="judge-text">今年我们邀请了40余位评委组成评委团，他们来自游戏开发者、
+          行业媒体，游戏主播和快爆资深玩家。
+          他们和快爆一起，通过多重视角共同品</p>
+        <div class="jude-content">
+          <div class="con-nav">
+            <a href="###" class="nav nav-active">专业玩家</a>
+            <a href="###" class="nav">媒体玩家</a>
+            <a href="###" class="nav">游戏主播</a>
+          </div>
+          <div class="con-table-con">
+            <div class="con-table-box">
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">我不是该隐</a>
+                <a class="con-table-a2">米哈游 战略投资总监</a>
+                <a class="con-table-a3">我不是该隐</a>
+                <a class="con-table-a4">米哈游 战略投资总监</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《欧陆战争》系列 制作人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+            </div>
+            <div class="con-table-box con-table-box-unshow">
+              <p class="con-table">
+                <a class="con-table-a1">李泽阳</a>
+                <a class="con-table-a2">米哈游 战略投资总监</a>
+                <a class="con-table-a3">李泽阳</a>
+                <a class="con-table-a4">米哈游 战略投资总监</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+
+            </div>
+            <div class="con-table-box con-table-box-unshow">
+              <p class="con-table">
+                <a class="con-table-a1">易熠</a>
+                <a class="con-table-a2">《欧陆战争》系列 制作人</a>
+                <a class="con-table-a3">易熠</a>
+                <a class="con-table-a4">《欧陆战争》系列 制作人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+              <p class="con-table">
+                <a class="con-table-a1">Simon</a>
+                <a class="con-table-a2">《武士零》 亚太地区负责人</a>
+                <a class="con-table-a3">Simon</a>
+                <a class="con-table-a4">《武士零》 亚太地区负责人</a>
+                <img src="images/judeg-line.png" alt="">
+              </p>
+            </div>
+          </div>
+          <!-- 20230105 add -->
+          <p class="judeg-con-tips">滑动查看更多</p>
+          <p class="judeg-con-ps">PS：以上排名不分先后，以评委姓名首字母排序</p>
+          <!-- 20230105 add -->
+        </div>
+      </div>
+    </div>
+
+    <a href="###" class="bottom-btn">
+      前往论坛参与讨论
+      <p>xxx讨论</p>
+    </a>
+  </div>
+  <!-- <div class="bom-link">
+    <div class="link-content">
+      <p>
+        <a href=""></a>
+      </p>
+    </div>
+  </div> -->
+  <div class="fixSlide">
+    <ul class="fixlist">
+      <li class="on"><a href="javascript:;">首页</a></li>
+      <li>
+        <dl>
+          <dt>竞猜<i class="on"></i></dt>
+          <dd>
+            <a href="javascript:;">年度最佳游戏</a>
+            <a href="javascript:;">最佳二次元游戏</a>
+            <a href="javascript:;">最佳独立游戏</a>
+            <a href="javascript:;">最佳剧情游戏</a>
+            <a href="javascript:;">最佳画面游戏</a>
+            <a href="javascript:;">最佳创意游戏</a>
+          </dd>
+        </dl>
+      </li>
+      <li>
+        <dl>
+          <dt>投票<i class="on"></i></dt>
+          <dd>
+            <a href="javascript:;">玩家最喜爱游戏</a>
+            <a href="javascript:;">最值得玩家期待游戏</a>
+            <a href="javascript:;">最值得玩家期待独立游戏</a>
+            <a href="javascript:;">最受玩家喜爱手游联动</a>
+          </dd>
+        </dl>
+      </li>
+      <li><a href="javascript:;">关于大赏</a></li>
+      <li><a href="javascript:;">评委阵容</a></li>
+      <li><a href="javascript:;">参与讨论</a></li>
+    </ul>
+  </div>
+  <div class="page">
+    <div class="footer" id="footer">
+      <div>
+        <script type="text/javascript"
+          src="//res.3839pic.com/kuaibao/n/hykb/2021dsvote/js/footer_inner_www.js?v_v45"></script>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div id="uniLoginAppendDiv">
+    <div id="loginBg" style="width: 100%; height: 7821px; display: block;"></div>
+    <div id="loginDiv" class="loginDiv" style="width: 444px; display: block; top: 100px;"> <span
+        onclick="closePopupLoginDiv(null,true);" class="login_close">关闭</span>
+      <div id="login_tagnum">
+        <div style="display: block;" class="login_tagnum login_fillet selectSearch" id="login_tagnum0">
+          <div class="login_new" id="loginContainDiv"> <iframe id="popup_login_frame" name="popup_login_frame"
+              frameborder="0" scrolling="no" height="410" onload="UniLogin.setIframeHeight('popup_login_frame')"
+              src="//www.3839.com/user/index.php?ac=login&amp;postLoginHandler=refreshParent&amp;redirectUrl=&amp;displayMode=popup&amp;css=&amp;appId=web&amp;gameId=&amp;username=&amp;externalLogin=qq&amp;password=&amp;mainDivId=popup_login_div&amp;autoLogin=false&amp;includeFcmInfo=false&amp;qrLogin=false&amp;userNameLabel=&amp;userNameTip=&amp;welcomeTip=&amp;loginTitle=&amp;show_reg=1&amp;show_fast_login=1&amp;v=1671681257491">
+            </iframe></div>
+        </div>
+      </div>
+      <div class="login_fd"></div>
+    </div>
+    <div id="loginErr" class="login_comfirm loginErrox">
+      <div class="login_error"> <strong id="errInfoDiv"></strong> </div>
+      <div class="unilogin_box"> <input type="submit" value="" class="login_okx"
+          onclick="javascript:closePopupErrDiv();">
+      </div>
+    </div>
+    <div id="loginTip" class="loginpop" style="top:10px;"> <span class="p-close"
+        onclick="javascript:closePopupTipDiv();">关闭</span>
+      <div class="pop-tit" id="tipTitleDiv">登录提醒</div>
+      <div class="pop-txt" id="tipInfoDiv"></div>
+      <div class="pbtn" id="tipBtnDiv"><a class="gbtn" onclick="javascript:closePopupTipDiv();">确定</a></div>
+    </div>
+  </div> -->
+  <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="js/video.min.js"></script>
+  <script>
+    $(function () {
+      $(".vote .vote-nav1").on("click", function () {
+        var n = $(this).index()
+        $(this).addClass("vote-nav2").siblings().removeClass("vote-nav2")
+        $(".vote-con-box .vote-con-nav").eq(n).removeClass("vote-con-nav-unshow").siblings().addClass("vote-con-nav-unshow")
+      })
+      $(".judge .nav").on("click", function () {
+        var s = $(this).index()
+        console.log(s)
+        $(this).addClass("nav-active").siblings().removeClass("nav-active")
+        $(".con-table-con .con-table-box").eq(s).removeClass("con-table-box-unshow").siblings().addClass("con-table-box-unshow")
+      })
+
+      // 鼠标移入
+      $(".option-btn").on("mouseover", function () {
+        $(".framebt1").show()
+      })
+      $(".option-btn").on("mouseout", function () {
+        $(".framebt1").hide()
+      })
+
+      $(".vote-btn").on("mouseover", function () {
+        $(".framebt2").show()
+      })
+      $(".vote-btn").on("mouseout", function () {
+        $(".framebt2").hide()
+      })
+
+      $(".game-btn").on("mouseover", function () {
+        $(".framebt3").show()
+      })
+      $(".game-btn").on("mouseout", function () {
+        $(".framebt3").hide()
+      })
+
+      // 滚动计算
+      function scrShow(id) {
+        var scrollY = $(window).scrollTop();
+        var greenHigh = $(window).height();
+        if (scrollY > (greenHigh / 2)) {
+          $(id).css('right', 0);
+        } else {
+          $(id).css('right', '-310px');
+        }
+      }
+
+      // 高度计算
+      function fixSeat() {
+        var winHight = $(window).height(),
+          headHight = $('.header').height();
+        var topStyle = (winHight - (2 * headHight)) / 10 + headHight;
+        $('.fixlist').css({
+          "margin-top": topStyle,
+          "max-height": winHight - (2 * topStyle)
+        })
+      }
+
+      scrShow('.fixSlide')
+      $(window).resize(function () {
+        fixSeat();
+        popWere();
+      })
+      $(window).scroll(function () {
+        scrShow('.fixSlide')
+      })
+
+      $('.fixlist dt').click(function () {
+        var turnOff = $(this).find('i')
+        if (turnOff.hasClass('on')) {
+          turnOff.removeClass('on');
+          $(this).siblings('dd').toggle();
+        } else {
+          turnOff.addClass('on');
+          $(this).siblings('dd').toggle();
+        }
+      })
+
+      $('.fixlist dd a').click(function () {
+        $('.fixlist li').removeClass('on');
+        $('.fixlist dd a').removeClass('on');
+        $(this).addClass('on');
+      })
+      $('.fixlist li>a').click(function () {
+        $('.fixlist li').removeClass('on');
+        $('.fixlist dd a').removeClass('on');
+        $(this).parent('li').addClass('on');
+      })
+    })
+  </script>
+</body>
+
+</html>

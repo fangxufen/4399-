@@ -1,0 +1,36 @@
+@import "_fontsize";
+@import "_dt";
+
+body {
+  // background-color: #c91f2b;
+}
+
+.box {
+  width: 7.5rem;
+  margin: 0 auto;
+}
+
+.text {
+  width: 5rem;
+  height: 5rem;
+  background-color: aquamarine;
+  @include center;
+
+  .text2 {
+    @include bg($w: 2rem, $h: 2rem, $bgimg: "../images/bg.png");
+  }
+
+  .title {
+    margin-left: 0.2rem;
+    font-size: 0.28rem;
+    color: antiquewhite;
+    @include shadow($size1: 0.01rem, $size2: 0.01rem, $size3: 0.01rem, $color: rgb(62, 209, 74))
+  }
+}
+
+.box2 {
+  width: 3rem;
+  height: 3rem;
+  background-color: aqua;
+  box-shadow: inset 0 0 0.05rem 0.05rem rgba(62, 209, 74, 0.8);
+}

@@ -1,0 +1,448 @@
+<!-- waslong 2021.12.17-->
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no,minimal-ui" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta content="telephone=no, email=no" name="format-detection" />
+  <!-- 启用360浏览器的极速模式(webkit) -->
+  <meta name="renderer" content="webkit" />
+  <!-- 避免IE使用兼容模式 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+  <meta name="HandheldFriendly" content="true" />
+  <!-- 微软的老式浏览器 -->
+  <meta name="screen-orientation" content="portrait" />
+  <!-- uc强制竖屏 -->
+  <meta name="x5-orientation" content="portrait" />
+  <!-- QQ强制竖屏 -->
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/jquery.js"></script>
+  <title> </title>
+  <script>
+    // 屏幕适配
+    function dw() {
+      var deviceWidth = document.documentElement.clientWidth;
+      if (deviceWidth > 750) deviceWidth = 750;
+      document.documentElement.style.fontSize = deviceWidth / 7.5 + "px";
+    }
+    dw();
+    window.onresize = function () {
+      dw();
+    };
+  </script>
+</head>
+
+<body>
+  <!-- 1130-start -->
+  <div class="head">
+    <div class="head-text"><span>下次如何回来：快爆首页-我的-加入快爆共建-亮评鉴定家</span></div>
+  </div>
+  <!-- 1130-end -->
+
+  <div class="box1 taj">
+    亮评鉴定家是一群对亮评有自己见解的热心玩家。他们总能慧眼识珠的发现快爆里那些或幽默、或有文采、或暖心助人、或能引发大家共鸣的亮评。他们是快爆里的亮评伯乐。
+  </div>
+  <div class="box1">
+    <div class="user">
+      <img src="./assets/avart.png" class="avart fl" alt="" />
+      <!-- 1020修改 用户模块改版 -->
+      <div class="fl info">
+        <div class="cf">
+          <p class="name fl">
+            欢迎你，昵称加粗超过十二的缩欢迎你，昵称加粗超过十二的缩
+          </p>
+          <!-- 1104修改 fr类名换位fl -->
+          <p class="medal fl">
+            <img src="./assets/medal5.png" alt="" /> 勋章名勋章名
+          </p>
+        </div>
+        <p class="money">爆米花：<i>66666</i> 超级爆米花：<i>66666</i></p>
+        <p><a href="#" class="icon2">爆米花商店></a></p>
+      </div>
+      <div class="cf"></div>
+      <div class="work">
+        <div>
+          本月鉴定数
+          <p>100</p>
+        </div>
+        <div>
+          本月成功鉴定数
+          <p>100</p>
+        </div>
+        <div>
+          总成功鉴定数
+          <p>100</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tabs">
+    <a class="active">亮评鉴定</a>
+    <a>鉴定权益&须知</a>
+  </div>
+  <!-- 开始鉴定 -->
+  <div class="box1 tabcont" id="tab1">
+    <p class="st4 mt30"></p>
+    <!-- 1020修改 mt40改成mt20 -->
+    <!-- 1118修改 主贴详情改成主贴内容 -->
+    <p class="p1 mt20"><em class="f28 fb">主帖内容</em></p>
+
+    <!-- 0708 修改 -->
+    <!-- <div class="post">
+      <p class="title"><span class="tag"></span> 震惊！外媒披露：Steam百万畅销移植《枪火重生手游》国服或5月25日上线！目前已在欧洲地区发布</p>
+      <div class="mt20 des">
+        <p>文字只展示2行，超过用省略号代替，大家期待的【联机版本】已于4月13日上午10点更新，点击下方文字只展示2行，超过用省略号代替，大家期待的【联机版本】已于4月13日上午10点更新，点击下方链</p>
+      </div>
+      <div class="videobox">
+        <video class="video-js" src="./assets/1.mp4" poster="./assets/img1.jpg" ></video>
+        <span class="play"></span>
+      </div>
+
+      <p class="f22 cf lp01">发布时间：2022-04-07 16:11:08 <a href="#" class="fr"><em>查看完整内容>></em></a></p>
+    </div> -->
+    <div class="post v3">
+      这是一个什么都有的回帖真的什么都有<img class="kb_face" src="http://t.bbs.3839.com/app/static/images/kbxinbaoge/kbxinbaoge001.gif"
+        info="http://t.bbs.3839.com/app/static/images/kbxinbaoge/kbxinbaoge001.gif|溜了" /><img class="kb_face"
+        src="http://t.bbs.3839.com/app/static/images/kbxinbaoge/kbxinbaoge001.gif"
+        info="http://t.bbs.3839.com/app/static/images/kbxinbaoge/kbxinbaoge001.gif|溜了" /><img
+        src="https://img.71acg.net/sykb~bbs/topic/20221018/10155556159" alt="" /><br />
+      <div>
+        <input class="kb_link" type="text" value="百度" info="TZ|1|0|http://www.baidu.com 百度" readonly="readonly"
+          unselectable="on" />
+      </div>
+      <div>
+        <input class="kb_link" type="text" value="内站链接" info="TZ|26|59698 内站链接" readonly="readonly" unselectable="on" />
+      </div>
+      <br /><span class="kb_at" info="3018|@凡尔赛" contenteditable="false">@凡尔赛</span><br /><input class="kb_link"
+        type="text" value="百度" info="http://www.baidu.com 百度" readonly="readonly" unselectable="on" />
+      <p class="title">
+        震惊！外媒披露：Steam百万畅销移植《枪火重生手游》国服或5月25日上线！目前已在欧洲地区发布
+      </p>
+      <div class="user v2 mt20">
+        <img src="./assets/avart.png" class="avart fl" alt="" />
+        <div class="fl info">
+          <p class="name">作者：墨羽不是摸鱼</p>
+          <p class="f22">发布时间：2022-04-07 16:11:08</p>
+        </div>
+        <div class="cf"></div>
+      </div>
+      <p class="mt20">
+        完整展示主楼内容，可在弹窗内往下拉动！过滤默认表情包、游戏插卡。
+      </p>
+      <!-- <p class="mt20"><a href="#"><em class="v2 tdu">这个是帖子里的链接 ，点击可以打开>></em></a></p> -->
+      <div class="videobox">
+        <video class="video-js" src="./assets/1.mp4" poster="./assets/img1.jpg"></video>
+        <span class="play"></span>
+      </div>
+      <p class="mt20">
+        完整展示主楼内容，可在弹窗内往下拉动！过滤默认表情包、游戏插卡。
+      </p>
+      <!-- <p class="mt20"><a href="#"><em class="v2 tdu">这个是帖子里的链接 ，点击可以打开>></em></a></p> -->
+      <div class="videobox">
+        <video class="video-js" src="./assets/1.mp4" poster="./assets/img1.jpg"></video>
+        <span class="play"></span>
+      </div>
+      <p class="mt20">
+        完整展示主楼内容，可在弹窗内往下拉动！过滤默认表情包、游戏插卡。
+      </p>
+      <!-- <p class="mt20"><a href="#"><em class="v2 tdu">这个是帖子里的链接 ，点击可以打开>></em></a></p> -->
+      <div class="videobox">
+        <video class="video-js" src="./assets/1.mp4" poster="./assets/img1.jpg"></video>
+        <span class="play"></span>
+      </div>
+      <p>
+        sdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkd
+      </p>
+      <p class="f22 cf lp01">
+        发布时间：2022-04-07 16:11:08
+        <a href="#" class="fr"><em>查看完整内容>></em></a>
+      </p>
+      <!-- <div class="line"></div>
+      <p><em>精彩回复</em></p>
+      <p class="f22 cf lp01">发布时间：2022-04-07 16:11:08 <a href="#" class="fr "><em>查看本帖已有亮评>></em></a></p>
+      <p class="des2"><a href="#"><em
+            class="v2">@张艺兴老公</em></a>12139年，我独自打扫着祠堂。老家的祠堂依旧是老样子尽管翻新了无数遍，那一万年前的样式依旧透出一丝古朴，典雅。爷爷说，老家的祠堂叫“宅”，是10000年前的那位祖宗居住一生的地方，那里的每一块瓷砖，每一本漫画，每一个手办，都是有千年历史的古董。沧海桑田，那些老物件终究是没被扔掉，静静放着，好好供着，仿佛老祖先有一天会回到宅，向我们诉说那一件件古董的意义。屋中最珍贵的，便是那书桌正中央摆放着的一台智能手机，那是一千年前的物件，如今早已被淘汰，连最老的老人都忘了该如何使用它，只是隐约知道它曾经统治了一个时代。传说老祖宗弥留之际，抱着手机，难以瞑目，似乎是想要交代什么，只是风烛残年，早已无力，怎么也没能交代下来，只留下这手机，被世代供奉。我独自打扫着祠堂，
+      </p>
+      <img src="./assets/img1.jpg" alt="">
+      -->
+    </div>
+
+    <!-- 1020修改 回帖详情修改 -->
+    <!-- 1118修改 回帖详情改成爆友回复 -->
+    <p class="p1 mt40"><em class="f28 fb">爆友回复</em></p>
+    <div class="post">
+      <!-- <div class="user mt20">
+        <img src="./assets/avart.png" class="avart fl" alt="">
+        <div class="info fl">
+          <p class="name">墨羽不是摸鱼</p>
+          <p class="f22 fl">发布时间：04-07</p>
+          <a href="#" class="fr "><em>查看本帖已有亮评>></em></a>
+        </div>
+        <div class="cf"></div>
+      </div> -->
+      <!-- <p class="f22 cf lp01">发布时间：2022-04-07 16:11:08 <a href="#" class="fr "><em>查看本帖已有亮评>></em></a> </p> -->
+
+      <!-- <p class="f22 cf lp01">发布时间：2022-04-07 16:11:08 <a href="#" class="fr"><em>查看完整内容>></em></a></p> -->
+      <!-- 1104修改 @昵称 改成 昵称： -->
+
+      <p class="des2">
+        <!-- 1118修改 去掉回复昵称 -->
+        <!-- <a href="#"><em class="v2">张艺兴老公：</em> </a> -->
+        12139年，我独自打扫着祠堂。老家的祠堂依旧是老样子尽管翻新了无数遍，那一万年前的样式依旧透出一丝古朴，典雅。爷爷说，老家的祠堂叫“宅”，是10000年前的那位祖宗居住一生的地方，那里的每一块瓷砖，每一本漫画，每一个手办，都是有千年历史的古董。沧海桑田，那些老物件终究是没被扔掉，静静放着，好好供着，仿佛老祖先有一天会回到宅，向我们诉说那一件件古董的意义。屋中最珍贵的，便是那书桌正中央摆放着的一台智能手机，那是一千年前的物件，如今早已被淘汰，连最老的老人都忘了该如何使用它，只是隐约知道它曾经统治了一个时代。传说老祖宗弥留之际，抱着手机，难以瞑目，似乎是想要交代什么，只是风烛残年，早已无力，怎么也没能交代下来，只留下这手机，被世代供奉。我独自打扫着祠堂，
+      </p>
+      <p>
+        sdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkdsdaldkdkdkdkdkdkdkdkdkdkdkd
+      </p>
+      <!-- <img src="./assets/img1.jpg" alt=""> -->
+      <img src="./assets/img1.jpg" alt="" />
+      <!-- 1020修改 回帖详情修改 -->
+      <p class="f22 cf lp01">
+        <!-- 1118修改 去掉时间 -->
+        <!-- 发布时间：2022-04-07 16:11:08 -->
+        <a href="#" class="fr"><em>查看本帖已有亮评>></em></a>
+      </p>
+    </div>
+    <!-- <div class="btnbox">
+        <a class="btn3 mr40">不够亮</a>
+        <a class="btn">亮评</a>
+      </div>
+      <div class="mt40 cf">
+        <a href="#" class="fr"><em class="tdu">跳过本次鉴定</em></a>
+      </div> -->
+
+    <!-- 1209 修改 statr-->
+    <div class="btnbox v4 btnbox-flex">
+      <a class="btn4"></a>
+      <a class="btn5"></a>
+      <!-- <a class="btn6">跳过</a> -->
+    </div>
+    <p class="skip"><a class="btn6">跳过</a></p>
+    <!-- 1209 修改 end-->
+
+    <!-- 空 -->
+    <div class="null">
+      <p>好棒呀，亮评都鉴定完啦</p>
+    </div>
+  </div>
+  <!-- 鉴定须知 -->
+
+  <!-- 1130-satrt-内容更换 -->
+  <div class="box1 tabcont" style="display: none" id="tab2">
+    <p class="st2 mt30"></p>
+    <p class="f28 tal">作为亮评鉴定家，可以享受以下权益：</p>
+    <ul class="list">
+      <li>
+        <img src="./images/medal2.png" alt="">
+        <p>鉴定权利</p>
+        <div class="list-tips"><span>权益一</span></div>
+      </li>
+      <li>
+        <img src="./images/medal3.png" alt="">
+        <p>福利奖励</p>
+        <div class="list-tips"><span>权益二</span></div>
+      </li>
+      <li>
+        <img src="./images/medal1.png" alt="">
+        <p>专属勋章</p>
+        <div class="list-tips"><span>权益三</span></div>
+      </li>
+    </ul>
+    <p class="p1 mt60"><i class="icon-tips">权益一：</i>鉴定其他人的回帖，决定他的回帖是否能成为亮评</p>
+    <div class="comment">
+      <img src="images/commment.png" alt="">
+    </div>
+    <p class="p1 mt30"><i class="icon-tips">权益二：</i>每月成功鉴定亮评达到以下数量，可获得超级爆米花</p>
+    <div class="table">
+      <div class="tr">
+        <div><em class="fb">≥ 20 条</em></div>
+        <div> <i class="f24">奖励3个超级爆米花</i> </div>
+      </div>
+      <div class="tr">
+        <div><em class="fb">≥ 50 条</em></div>
+        <div> <i class="f24">奖励7个超级爆米花</i> </div>
+      </div>
+      <div class="tr">
+        <div><em class="fb">≥ 50 条</em></div>
+        <div> <i class="f24">奖励7个超级爆米花</i> </div>
+      </div>
+    </div>
+    <p class="p1 mt60"><i class="icon-tips">权益三：</i>每月鉴定达到 800 条，可领取亮评鉴定家专属勋章</p>
+    <div class="get">
+      <!-- 1209修改 statr -->
+      <div class="get-box">
+        <div class="get-box-imgbg">
+          <img src="./images/medal44.png" alt="" />
+        </div>
+        <p>亮评鉴定学徒<a class="get-day">（30天）</a></p>
+        <span>每月鉴定数≥400条</span>
+        <div><a href="#" class="btn">领取</a></div>
+      </div>
+      <div class="get-box">
+        <div class="get-box-imgbg">
+          <img src="./images/medal44.png" alt="" />
+        </div>
+        <p>亮评鉴定学徒<a class="get-day">（30天）</a></p>
+        <span>每月鉴定数≥400条</span>
+        <div><a href="#" class="btn disable">已领取</a></div>
+      </div>
+      <!-- 1209修改 end -->
+    </div>
+    <p class="st3"></p>
+    <p class="duty">
+      各位亮评鉴定家们，亮评是指在快爆论坛中出现的有创意、有才华的优质回复，被鉴定为亮评后，亮评君会为这些回复盖上特有的标记并且在回复盖上特有的标记并且在回复中前排展示，以彰显它的与众不同，让它能被更多爆友看见。</p>
+    <p class="duty duty2">请仔细阅读亮评类型和精彩案例，做个慧眼识珠的亮评伯乐吧。<a href="###">前往查看亮评类型>></a></p>
+    <ul class="list2">
+      <li>
+        <p></p>
+        <div class="des">
+          每天进行审核，保持活跃状态：
+        </div>
+      </li>
+      <li>
+        <p></p>
+        <div class="des">
+          审核仔细认真，每一条都在亮评标准上进行合理的判断，不为了追求数量与速度而乱审：
+        </div>
+      </li>
+      <li>
+        <p></p>
+        <div class="des">
+          亮评鉴定家若长期低活跃或审核正确率过低，将会被清出亮评鉴定家，需要重新报名并参与考试
+        </div>
+      </li>
+      <li class="des-link"><a href="###">有疑问或建议？前往提交反馈>></a></li>
+    </ul>
+  </div>
+  <!-- 1130-end -->
+
+  <!-- 1130-start-去除 -->
+  <!-- <div class="btnbox hidden">
+    <a href="#" class="btn2">报名加入</a>
+  </div> -->
+  <!-- <p class="p2 hidden">已有<i>XXX</i>人成为亮评鉴亮家</p> -->
+  <!-- 1130-end-->
+
+  <div class="aside">
+    <a class="menu1"></a>
+    <!-- 1130-start-修改-->
+    <a class="menu2 backtopshow" onclick="return goTo($('body'))" style="display: none"></a>
+    <!-- 1130-end-->
+  </div>
+  <div class="pding"></div>
+
+  <!-- 1130-去除 -->
+  <!-- <div class="about-box">
+    <p class="title">关于好游快爆APP</p>
+    <ul class="about-list">
+      <li>
+        <a href="#">
+          <img class="about-m" src="./images/about_m1.png" alt="" srcset="" />
+          <p class="p">新游<br />抢先玩</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="about-m" src="./images/about_m2.png" alt="" srcset="" />
+          <p class="p">热门<br />游戏礼包</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="about-m" src="./images/about_m3.png" alt="" srcset="" />
+          <p class="p">精品<br />游戏攻略</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="about-m" src="./images/about_m4.png" alt="" srcset="" />
+          <p class="p">实用<br />游戏工具</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="about-m" src="./images/about_m5.png" alt="" srcset="" />
+          <p class="p">优质<br />创作内容</p>
+        </a>
+      </li>
+    </ul>
+    <a href="#" class="about"></a>
+  </div> -->
+
+  <div class="footer">
+    <p>
+      本活动最终解释权归好游快爆所有<br />
+      ©2009-2022 厦门纯游互动科技有限公司
+    </p>
+  </div>
+</body>
+<script>
+  $(".tabs a").click(function () {
+    $(".tabs a").removeClass("active");
+    $(this).addClass("active");
+    $(".tabcont").hide();
+    $(".tabcont").eq($(this).index()).show();
+  });
+
+  //侧边菜单
+  // var d = 300;
+  // $(document).scroll(function (e) {
+  //   var scroH = $(document).scrollTop();
+  //   if (scroH < d) {
+  //     $(".aside .menu2").hide();
+  //   } else {
+  //     $(".aside .menu2").show();
+  //   }
+  // });
+  $(".play").click(function () {
+    $(this).hide();
+    $("video").trigger("play");
+  });
+  function resetLongImg() {
+    setTimeout(function () {
+      $.each($(".post img"), function (index, item) {
+        if ($(item).height() > 1000) {
+          $(item).addClass("longimg");
+        }
+        console.log($(item).height());
+      });
+    }, 2000);
+  }
+
+  // 1130-add
+  // 定位
+  function goTo(div, top) {
+    // $('html,body').stop();
+    var top = parseInt(div.offset().top) - (top || 0);
+    $("html,body").animate({ scrollTop: (0, top) }, 800);
+    window.event && (window.event.returnValue = false);
+    return false;
+  }
+  // 首屏不出现
+  function scrShow(id) {
+    var scrollY = $(window).scrollTop();
+    var scrHeight = $(window).height();
+    if (scrollY > scrHeight / 2) {
+      $(id).show();
+    } else {
+      $(id).hide();
+    }
+  }
+  $(function () {
+    // 挂件
+    scrShow(".backtopshow");
+    $(window).scroll(function () {
+      scrShow(".backtopshow");
+    });
+    // 自动滚动
+  });
+  // 1130-add
+  resetLongImg();
+</script>
+
+</html>
